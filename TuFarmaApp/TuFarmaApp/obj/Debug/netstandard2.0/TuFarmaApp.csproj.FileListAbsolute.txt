@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\bin\Debug\netstandard2.0\TuFarmaApp.deps.json
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\bin\Debug\netstandard2.0\TuFarmaApp.dll
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\bin\Debug\netstandard2.0\TuFarmaApp.pdb
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.csproj.Fody.CopyLocal.cache
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.dll
+C:\Users\Administrator\source\repos\TuFarmaApp\TuFarmaApp\TuFarmaApp\obj\Debug\netstandard2.0\TuFarmaApp.pdb

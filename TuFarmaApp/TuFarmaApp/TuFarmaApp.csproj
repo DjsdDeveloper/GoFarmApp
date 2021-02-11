@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Img\Cam.png" />
+    <None Remove="Img\FondoBanner.png" />
+    <None Remove="Img\GoApp.png" />
+    <None Remove="Img\GoFarmaAppLogo.png" />
+    <None Remove="Img\NewGoFarmApp.png" />
+    <None Remove="Img\no-picture-user.jpg" />
+    <None Remove="Img\Portada\Portada1.jpg" />
+    <None Remove="Img\Svg\calendario.svg" />
+    <None Remove="Img\Svg\conversation.svg" />
+    <None Remove="Img\Svg\Login.svg" />
+    <None Remove="Img\Svg\Password.svg" />
+    <None Remove="Img\Svg\UserAccount.svg" />
+    <None Remove="Img\Svg\UserLog.svg" />
+    <None Remove="Img\Svg\visible.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Img\Cam.png" />
+    <EmbeddedResource Include="Img\FondoBanner.png" />
+    <EmbeddedResource Include="Img\GoApp.png" />
+    <EmbeddedResource Include="Img\GoFarmaAppLogo.png" />
+    <EmbeddedResource Include="Img\NewGoFarmApp.png" />
+    <EmbeddedResource Include="Img\no-picture-user.jpg" />
+    <EmbeddedResource Include="Img\Portada\Portada1.jpg" />
+    <EmbeddedResource Include="Img\Svg\calendario.svg" />
+    <EmbeddedResource Include="Img\Svg\conversation.svg" />
+    <EmbeddedResource Include="Img\Svg\Login.svg" />
+    <EmbeddedResource Include="Img\Svg\Password.svg" />
+    <EmbeddedResource Include="Img\Svg\UserAccount.svg" />
+    <EmbeddedResource Include="Img\Svg\UserLog.svg" />
+    <EmbeddedResource Include="Img\Svg\visible.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.470" />
+    <PackageReference Include="AiForms.Layouts" Version="1.1.0" />
+    <PackageReference Include="akavache" Version="7.1.1" />
+    <PackageReference Include="CarouselView.FormsPlugin" Version="6.0.0" />
+    <PackageReference Include="CsvHelper" Version="21.0.6" />
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+    <PackageReference Include="Fody" Version="6.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="modernhttpclient-updated" Version="3.4.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.3.1" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.10" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.2" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
+  </ItemGroup>
+
+</Project>
