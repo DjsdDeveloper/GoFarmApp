@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using TuFarmaApp.Views;
+using Xamarin.Forms;
 
 namespace TuFarmaApp.ViewModels
 {
@@ -14,7 +16,10 @@ namespace TuFarmaApp.ViewModels
 
         public DelegateCommand RegisterCommand { get; private set; }
         public DelegateCommand CommandPoliticas { get; private set; }
-        public DelegateCommand CommandTerminos { get; private set; }        
+        public DelegateCommand CommandTerminos { get; private set; }
+        public DelegateCommand CommandOlvido { get; private set; }
+        public DelegateCommand CommandGoHome { get; private set; }        
+
 
         public LoginInitViewModel(INavigationService navigationServices)
         {
@@ -35,6 +40,17 @@ namespace TuFarmaApp.ViewModels
             CommandTerminos = new DelegateCommand(async () =>
             {
                 await _navigationService.NavigateAsync($"{nameof(Views.TerminosPage)}");
+            });
+
+            CommandOlvido = new DelegateCommand(async () =>
+            {
+                await _navigationService.NavigateAsync($"{nameof(Views.OlvidarPage)}");
+            });
+
+            CommandGoHome = new DelegateCommand(async () =>
+            {
+                await _navigationService
+                    .NavigateAsync($"/{nameof(MenuLogin)}/{nameof(NavigationPage)}/{nameof(HomePage)}");
             });
         }
 

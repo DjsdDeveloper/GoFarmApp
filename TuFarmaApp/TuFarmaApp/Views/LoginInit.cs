@@ -188,9 +188,9 @@ namespace TuFarmaApp.Views
                 Content = GridTwoBoton
             };
 
-            //TapGestureRecognizer tapButtonLogin = new TapGestureRecognizer();
-            //tapButtonLogin.SetBinding(TapGestureRecognizer.CommandProperty, nameof(AddProfileViewModel.SavePhotoCommand));
-            //frameButtonLogin.GestureRecognizers.Add(tapButtonLogin);
+            TapGestureRecognizer tapButtonLogin = new TapGestureRecognizer();
+            tapButtonLogin.SetBinding(TapGestureRecognizer.CommandProperty, nameof(LoginInitViewModel.CommandGoHome));
+            frameButtonLogin.GestureRecognizers.Add(tapButtonLogin);
 
             GridLogin.Children.Add(frameButtonLogin, 0, 3, 3, 4);
 
@@ -282,9 +282,9 @@ namespace TuFarmaApp.Views
                 HorizontalTextAlignment = TextAlignment.Center,
                 Text = "¿Olvidaste tu contraseña?",
             };
-            //TapGestureRecognizer tapOlvidaste = new TapGestureRecognizer();
-            //tapOlvidaste.SetBinding(TapGestureRecognizer.CommandProperty, nameof(LoginPageViewModel.CommandOlvido));
-            //LabelOlvido.GestureRecognizers.Add(tapOlvidaste);
+            TapGestureRecognizer tapOlvidaste = new TapGestureRecognizer();
+            tapOlvidaste.SetBinding(TapGestureRecognizer.CommandProperty, nameof(LoginInitViewModel.CommandOlvido));
+            LabelOlvido.GestureRecognizers.Add(tapOlvidaste);
 
             GridLogin.Children.Add(LabelOlvido, 0, 3, 6, 7);
 

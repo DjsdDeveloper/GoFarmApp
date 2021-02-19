@@ -9,6 +9,7 @@
     <None Remove="Img\FondoBanner.png" />
     <None Remove="Img\GoApp.png" />
     <None Remove="Img\GoFarmaAppLogo.png" />
+    <None Remove="Img\lupa.png" />
     <None Remove="Img\NewGoFarmApp.png" />
     <None Remove="Img\no-picture-user.jpg" />
     <None Remove="Img\Portada\Portada1.jpg" />
@@ -26,6 +27,7 @@
     <EmbeddedResource Include="Img\FondoBanner.png" />
     <EmbeddedResource Include="Img\GoApp.png" />
     <EmbeddedResource Include="Img\GoFarmaAppLogo.png" />
+    <EmbeddedResource Include="Img\lupa.png" />
     <EmbeddedResource Include="Img\NewGoFarmApp.png" />
     <EmbeddedResource Include="Img\no-picture-user.jpg" />
     <EmbeddedResource Include="Img\Portada\Portada1.jpg" />

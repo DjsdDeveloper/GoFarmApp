@@ -80,8 +80,10 @@ namespace TuFarmaApp
             containerRegistry.RegisterForNavigation<RegisterStepTwo, RegisterStepTwoViewModel>(); 
             containerRegistry.RegisterForNavigation<RegisterStepThree, RegisterStepThreeViewModel>(); 
             containerRegistry.RegisterForNavigation<PoliticasPage, PoliticasPageViewModel>(); 
-            containerRegistry.RegisterForNavigation<TerminosPage, TerminosPageViewModel>(); 
-
+            containerRegistry.RegisterForNavigation<TerminosPage, TerminosPageViewModel>();
+            containerRegistry.RegisterForNavigation<OlvidarPage, OlvidarPageViewModel>();
+            containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
+            containerRegistry.RegisterForNavigation<MenuLogin, MenuLoginViewModel>(); 
 
 
 

@@ -8,10 +8,10 @@ namespace TuFarmaApp.Styles
     public class GlobalStyles : ResourceDictionary
     {
         //public static readonly ImageSource LogoPath = ImageSource.FromResource("TuFarmaApp.Img.GoFarmapp2.png";
-        public static readonly string PrimaryChappsyColorHex = "#a3cb38";
+        public static readonly string PrimaryColorHex = "#04554C";
 
-        public static readonly Color PrimaryChappsyColor = Color.FromHex(PrimaryChappsyColorHex);
-        public static readonly Color SecondChappsyColor = Color.FromHex("#81b71b");
+        public static readonly Color PrimaryColor = Color.FromHex(PrimaryColorHex);
+        public static readonly Color SecondColor = Color.FromHex("#81b71b");
 
         public GlobalStyles()
         {
@@ -19,7 +19,7 @@ namespace TuFarmaApp.Styles
             {
                 Setters =
                 {
-                    new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = PrimaryChappsyColor },
+                    new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = PrimaryColor },
                     new Setter { Property = NavigationPage.BarTextColorProperty, Value = Color.White },
                 }
             };
@@ -35,7 +35,7 @@ namespace TuFarmaApp.Styles
             {
                 Setters =
                 {
-                    new Setter { Property = VisualElement.BackgroundColorProperty, Value = SecondChappsyColor },
+                    new Setter { Property = VisualElement.BackgroundColorProperty, Value = SecondColor },
                     new Setter { Property = Button.TextColorProperty, Value = Color.White }
                 }
             };
@@ -115,7 +115,7 @@ namespace TuFarmaApp.Styles
                 ApplyToDerivedTypes = true,
                 Setters =
                 {
-                    new Setter { Property = TabbedPage.BarBackgroundColorProperty , Value = PrimaryChappsyColor },
+                    new Setter { Property = TabbedPage.BarBackgroundColorProperty , Value = PrimaryColor },
                     new Setter { Property = TabbedPage.BarTextColorProperty , Value = Color.White },
                     //new Setter { Property = TabbedPage.BarTextColorProperty , Value = Color.Black },
                     //new Setter { Property = Picker.FontFamilyProperty, Value = "Nunito-Regular.ttf#"},
@@ -144,8 +144,8 @@ namespace TuFarmaApp.Styles
             Add("InputLabel", InputLabel);
             Add("TituloLabel", TituloLabel);
             Add("SubTituloLabel", SubTituloLabel);
-            Add("SecondChappsyColor", SecondChappsyColor);
-            Add("PrimaryChappsyColor", PrimaryChappsyColor);
+            Add("SecondChappsyColor", SecondColor);
+            Add("PrimaryChappsyColor", PrimaryColor);
             Add("ChappsyGray", Color.FromHex("#bfbdbd"));
 
         }
