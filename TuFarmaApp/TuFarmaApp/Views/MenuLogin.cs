@@ -1,12 +1,15 @@
 ﻿using FFImageLoading.Forms;
 using FFImageLoading.Svg.Forms;
 using ImageCircle.Forms.Plugin.Abstractions;
+using Prism.Behaviors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TuFarmaApp.CustomRender;
+using TuFarmaApp.Models;
 using TuFarmaApp.Styles;
+using TuFarmaApp.ViewModels;
 using Xamarin.Forms;
 
 namespace TuFarmaApp.Views
@@ -33,19 +36,19 @@ namespace TuFarmaApp.Views
                         HorizontalOptions = LayoutOptions.Start,
                         HeightRequest = 18,
                         WidthRequest = 18,
-                        Source = "resource://TuFarmaApp.Img.Svg.conversation.svg",
+                        //Source = "resource://TuFarmaApp.Img.Svg.conversation.svg",
                     };
-                    //ButtonIcon.SetBinding(SvgCachedImage.SourceProperty,
-                    //    nameof(MenuModel.Icon),
-                    //    stringFormat: "resource://{0:F2}");
+                    ButtonIcon.SetBinding(SvgCachedImage.SourceProperty,
+                        nameof(MenuModel.Icon),
+                        stringFormat: "resource://{0:F2}");
 
                     Label label = new Label
                     {
                         VerticalTextAlignment = TextAlignment.Center,
                         FontSize = size,
-                        Text = "Texto"
+                        //Text = "Texto"
                     };
-                    //label.SetBinding(Label.TextProperty, nameof(MenuModel.Text));
+                    label.SetBinding(Label.TextProperty, nameof(MenuModel.Text));
 
                     return new ViewCell
                     {
@@ -66,11 +69,56 @@ namespace TuFarmaApp.Views
                 SeparatorVisibility = SeparatorVisibility.Default,
                 SeparatorColor = Color.Black,
                 VerticalScrollBarVisibility = ScrollBarVisibility.Never,
-                ItemsSource = new List<string>
+                ItemsSource = new List<MenuModel>
                 {
-                    "Filtrar",
-                    "Texto2",
-                    "Texto3"
+                    new MenuModel
+                    {
+                        Text = "Mis transacciones",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.transacciones.svg",
+                        //PageName = nameof(Carrito)
+                    },
+                    new MenuModel
+                    {
+                        Text = "Historial de busquedas",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.history.svg",
+                        //PageName = nameof(Addres)
+                    },
+                    new MenuModel
+                    {
+                        Text = "Sitios visitados",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.viewrecent.svg",
+                        //PageName = $"{nameof(RouteBuy1)}"
+                    },
+                    new MenuModel
+                    {
+                        Text = "Configuración",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.setting.svg",
+                        //PageName = $"{nameof(MySalesTabPage)}"
+                    },
+                    new MenuModel
+                    {
+                        Text = "Ayuda",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.ayuda.svg",
+                        //PageName = nameof(MisCompras)
+                    },
+                    //new MenuModel
+                    //{
+                    //    Text = "Crea tu tienda web",
+                    //    Icon =  "TuFarmaApp.Img.Svg.conversation.svg",
+                    //    //PageName = nameof(NewShop)
+                    //},
+                    //new MenuModel
+                    //{
+                    //    Text = "Información general",
+                    //    Icon =  "TuFarmaApp.Img.Svg.conversation.svg",
+                    //    //PageName = nameof(InfoGeneral)
+                    //},
+                    new MenuModel
+                    {
+                        Text = "Cerrar sesión",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.logout.svg",
+                        PageName = nameof(LoginInit)
+                    }
                 }
             };
 
@@ -80,8 +128,8 @@ namespace TuFarmaApp.Views
                 BorderThickness = 1,
                 HorizontalOptions = LayoutOptions.Center,
                 Aspect = Aspect.AspectFill,
-                HeightRequest = 80,
-                WidthRequest = 80,
+                HeightRequest = 100,
+                WidthRequest = 100,
                 Source = ImageSource.FromResource("TuFarmaApp.Img.no-picture-user.jpg"),
                 Margin = new Thickness(0, 20, 0, 0),
             };
@@ -89,121 +137,113 @@ namespace TuFarmaApp.Views
             var LabelUserName = new Label
             {
                 HorizontalTextAlignment = TextAlignment.Center,
-                FontSize = 18,
+                FontSize = 16,
                 VerticalTextAlignment = TextAlignment.Center,
                 Margin = new Thickness(0, 0, 0, 20),
                 Text = "Darwin José Sansonetti Díaz"
             };
 
-            SvgCachedImage FiltrarIcon = new SvgCachedImage
+            //SvgCachedImage FiltrarIcon = new SvgCachedImage
+            //{
+            //    HorizontalOptions = LayoutOptions.Start,
+            //    HeightRequest = 18,
+            //    WidthRequest = 18,
+            //    Source = "resource://TuFarmaApp.Img.Svg.SvgMenu.filter.svg",
+            //};
+
+            //var filtrar = new Label
+            //{
+            //    Margin = new Thickness(0, 0, 0, 0),
+            //    Text = "Filtrar busqueda",
+            //    VerticalTextAlignment = TextAlignment.Center,
+            //    FontSize = size
+            //};
+
+            SvgCachedImage InformationIcon = new SvgCachedImage
             {
                 HorizontalOptions = LayoutOptions.Start,
                 HeightRequest = 18,
                 WidthRequest = 18,
-                Source = "resource://TuFarmaApp.Img.Svg.conversation.svg",
+                Source = "resource://TuFarmaApp.Img.Svg.SvgMenu.info.svg",
             };
 
-            var filtrar = new Label
+            var Information = new Label
             {
                 Margin = new Thickness(0, 0, 0, 0),
-                Text = "Filtrar",
+                Text = "Información personal",
                 VerticalTextAlignment = TextAlignment.Center,
                 FontSize = size
             };
 
             #region Grid Register
-            var GridRegister = new Grid()
-            {
-                RowSpacing = 0,
-                BackgroundColor = Color.FromHex("#eeeeee")
-            };
-
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-            GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-
-            GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
-            GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-
-            //GridRegister.SetBinding(Grid.IsVisibleProperty, nameof(LoginPageViewModel.IsVisibleRegister));
-
-            //GridRegister.Children.Add(new Label
+            //var GridRegister = new Grid()
             //{
-            //    HorizontalOptions = LayoutOptions.Center,
-            //    VerticalOptions = LayoutOptions.Center,
-            //    Text = "Registro",
-            //    FontSize = 18,
-            //    Margin = new Thickness(0, 20, 0, 0)
-            //}, 0, 3, 0, 1);
-
-            //GridRegister.Children.Add(new Label
-            //{
-            //    HorizontalOptions = LayoutOptions.Center,
-            //    VerticalOptions = LayoutOptions.Center,
-            //    Text = "Paso 2: Ubicación",
-            //    FontSize = 14,
-            //    Margin = new Thickness(0, 20, 0, 0)
-            //}, 0, 3, 1, 2);
-
-            PickerCustom PickerEstado = new PickerCustom()
-            {
-                Margin = new Thickness(0),
-                FontSize = 12,
-                SelectedIndex = -1,
-                Title = "Estado"
-            };
-            //PickerEstado.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickEstado));
-
-            var FramePickerEstado = new Frame()
-            {
-                Padding = new Thickness(0),
-                BackgroundColor = Color.White,
-                Margin = new Thickness(20, 40, 20, 0),
-                BorderColor = Color.Transparent,
-                IsClippedToBounds = true,
-                CornerRadius = 10,
-                WidthRequest = (App.screenWidth / 2.2),
-                Content = PickerEstado
-            };
-            GridRegister.Children.Add(FramePickerEstado, 0, 3, 0, 1);
-
-            PickerCustom PickerMunicipio = new PickerCustom()
-            {
-                Margin = new Thickness(0),
-                FontSize = 12,
-                SelectedIndex = -1,
-                Title = "Municipio"
-            };
-            //PickerMunicipio.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickMunicipio));
-
-            var FramePickerMunicipio = new Frame()
-            {
-                Padding = new Thickness(0),
-                BackgroundColor = Color.White,
-                Margin = new Thickness(20, 30, 20, 0),
-                BorderColor = Color.Transparent,
-                IsClippedToBounds = true,
-                CornerRadius = 10,
-                WidthRequest = (App.screenWidth / 2.2),
-                Content = PickerMunicipio
-            };
-
-            GridRegister.Children.Add(FramePickerMunicipio, 0, 3, 1, 2);
-
-            //var EntryDireccion = new CustomEditor()
-            //{
-            //    FontSize = 12,
-            //    HeightRequest = 72,
-            //    Margin = new Thickness(10, 0, 10, 0),
-            //    Placeholder = "Dirección"
+            //    RowSpacing = 0,
+            //    BackgroundColor = Color.FromHex("#eeeeee")
             //};
 
-            //var FrameEntryDireccion = new Frame()
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+            //GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            //GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
+            //GridRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            ////GridRegister.SetBinding(Grid.IsVisibleProperty, nameof(LoginPageViewModel.IsVisibleRegister));
+
+            ////GridRegister.Children.Add(new Label
+            ////{
+            ////    HorizontalOptions = LayoutOptions.Center,
+            ////    VerticalOptions = LayoutOptions.Center,
+            ////    Text = "Registro",
+            ////    FontSize = 18,
+            ////    Margin = new Thickness(0, 20, 0, 0)
+            ////}, 0, 3, 0, 1);
+
+            ////GridRegister.Children.Add(new Label
+            ////{
+            ////    HorizontalOptions = LayoutOptions.Center,
+            ////    VerticalOptions = LayoutOptions.Center,
+            ////    Text = "Paso 2: Ubicación",
+            ////    FontSize = 14,
+            ////    Margin = new Thickness(0, 20, 0, 0)
+            ////}, 0, 3, 1, 2);
+
+            //var PickerEstado = new CustomEntry()
+            //{
+            //    FontSize = 12,
+            //    Margin = new Thickness(0),
+            //    Placeholder = "Estado"
+            //};
+            ////PickerEstado.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickEstado));
+
+            //var FramePickerEstado = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    Margin = new Thickness(20, 20, 20, 0),
+            //    BorderColor = Color.Transparent,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    WidthRequest = (App.screenWidth / 2.2),
+            //    Content = PickerEstado
+            //};
+            //GridRegister.Children.Add(FramePickerEstado, 0, 3, 0, 1);
+
+            //var PickerMunicipio = new CustomEntry()
+            //{
+            //    FontSize = 12,
+            //    Margin = new Thickness(0),
+            //    Placeholder = "Municipio"
+            //};
+            ////PickerMunicipio.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickMunicipio));
+
+            //var FramePickerMunicipio = new Frame()
             //{
             //    Padding = new Thickness(0),
             //    BackgroundColor = Color.White,
@@ -211,95 +251,379 @@ namespace TuFarmaApp.Views
             //    BorderColor = Color.Transparent,
             //    IsClippedToBounds = true,
             //    CornerRadius = 10,
-            //    Content = EntryDireccion
+            //    WidthRequest = (App.screenWidth / 2.2),
+            //    Content = PickerMunicipio
             //};
-            //GridRegister.Children.Add(FrameEntryDireccion, 0, 3, 4, 5);
 
-            var LabelButtonRegister = new Label()
-            {
-                FontSize = 14,
-                HorizontalTextAlignment = TextAlignment.Center,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(0),
-                TextColor = Color.White,
-                Text = "Filtrar"
-            };
+            //GridRegister.Children.Add(FramePickerMunicipio, 0, 3, 1, 2);
 
-            var GridButtonRegister = new Grid()
-            {
-                BackgroundColor = Color.Transparent,
-                VerticalOptions = LayoutOptions.Center
-            };
+            ////var EntryDireccion = new CustomEditor()
+            ////{
+            ////    FontSize = 12,
+            ////    HeightRequest = 72,
+            ////    Margin = new Thickness(10, 0, 10, 0),
+            ////    Placeholder = "Dirección"
+            ////};
 
-            GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
-            GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            ////var FrameEntryDireccion = new Frame()
+            ////{
+            ////    Padding = new Thickness(0),
+            ////    BackgroundColor = Color.White,
+            ////    Margin = new Thickness(20, 30, 20, 0),
+            ////    BorderColor = Color.Transparent,
+            ////    IsClippedToBounds = true,
+            ////    CornerRadius = 10,
+            ////    Content = EntryDireccion
+            ////};
+            ////GridRegister.Children.Add(FrameEntryDireccion, 0, 3, 4, 5);
 
-            GridButtonRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //var CostoMin = new CustomEntry()
+            //{
+            //    FontSize = 12,
+            //    Margin = new Thickness(0),
+            //    Placeholder = "Costo Min"
+            //};
+            ////CostoMin.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickMunicipio));
 
-            GridButtonRegister.Children.Add(LabelButtonRegister, 1, 0);
+            //var FrameCostoMin = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    Margin = new Thickness(20, 30, 0, 0),
+            //    BorderColor = Color.Transparent,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    WidthRequest = (App.screenWidth / 2),
+            //    Content = CostoMin
+            //};
 
-            var frameButtonRegister = new Frame()
-            {
-                Margin = new Thickness(20, 30, 20, 0),
-                Padding = new Thickness(0),
-                BackgroundColor = Color.FromHex("#4f29B8"),
-                BorderColor = Color.Transparent,
-                HeightRequest = 40,
-                VerticalOptions = LayoutOptions.Center,
-                Content = GridButtonRegister
-            };
+            //var CostoMax = new CustomEntry()
+            //{
+            //    FontSize = 12,
+            //    Margin = new Thickness(0),
+            //    Placeholder = "Costo Max"
+            //};
+            ////CostoMax.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickMunicipio));
 
-            //TapGestureRecognizer tapButtonSiguiente = new TapGestureRecognizer();
-            //tapButtonSiguiente.SetBinding(TapGestureRecognizer.CommandProperty, nameof(RegisterStepTwoViewModel.SiguienteCommand));
-            //frameButtonRegister.GestureRecognizers.Add(tapButtonSiguiente);
+            //var FrameCostoMax = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    Margin = new Thickness(0, 30, 20, 0),
+            //    BorderColor = Color.Transparent,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    WidthRequest = (App.screenWidth / 2),
+            //    Content = CostoMax
+            //};
 
-            GridRegister.Children.Add(frameButtonRegister, 0, 3, 2, 3);
+            //GridRegister.Children.Add(
+            //    new StackLayout()
+            //    {
+            //        Orientation = StackOrientation.Horizontal,
+            //        Children =
+            //        {
+            //            FrameCostoMin,
+            //            new Label()
+            //            {
+            //                FontSize = 14,
+            //                HorizontalTextAlignment = TextAlignment.Start,
+            //                VerticalTextAlignment = TextAlignment.Center,
+            //                Margin = new Thickness(5, 30, 5, 0),
+            //                Text = " - "
+            //            },
+            //            FrameCostoMax
+            //        }
+            //    }
+            //, 0, 3, 2, 3);
 
-            //var LabelButtonVolver = new Label()
+            //var LabelButtonRegister = new Label()
             //{
             //    FontSize = 14,
             //    HorizontalTextAlignment = TextAlignment.Center,
             //    VerticalTextAlignment = TextAlignment.Center,
             //    Margin = new Thickness(0),
             //    TextColor = Color.White,
-            //    Text = "Volver"
+            //    Text = "Filtrar"
             //};
 
-            //var GridVolverBoton = new Grid()
+            //var GridButtonRegister = new Grid()
             //{
             //    BackgroundColor = Color.Transparent,
             //    VerticalOptions = LayoutOptions.Center
             //};
 
-            //GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            //GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
-            //GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            //GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            //GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
+            //GridButtonRegister.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-            //GridVolverBoton.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            //GridButtonRegister.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
 
-            //GridVolverBoton.Children.Add(LabelButtonVolver, 1, 0);
+            //GridButtonRegister.Children.Add(LabelButtonRegister, 1, 0);
 
-            //var frameButtonVolver = new Frame()
+            //var frameButtonRegister = new Frame()
             //{
-            //    Margin = new Thickness(20, 15, 20, 30),
+            //    Margin = new Thickness(20, 15, 20, 10),
             //    Padding = new Thickness(0),
-            //    BackgroundColor = Color.FromHex("#F80061"),
+            //    BackgroundColor = Color.FromHex("#4f29B8"),
             //    BorderColor = Color.Transparent,
             //    HeightRequest = 40,
             //    VerticalOptions = LayoutOptions.Center,
-            //    Content = GridVolverBoton
+            //    Content = GridButtonRegister
             //};
 
-            //TapGestureRecognizer tapButtonVolver = new TapGestureRecognizer();
-            //tapButtonVolver.SetBinding(TapGestureRecognizer.CommandProperty, nameof(RegisterStepTwoViewModel.VolverCommand));
-            //frameButtonVolver.GestureRecognizers.Add(tapButtonVolver);
+            ////TapGestureRecognizer tapButtonSiguiente = new TapGestureRecognizer();
+            ////tapButtonSiguiente.SetBinding(TapGestureRecognizer.CommandProperty, nameof(RegisterStepTwoViewModel.SiguienteCommand));
+            ////frameButtonRegister.GestureRecognizers.Add(tapButtonSiguiente);
 
-            //GridRegister.Children.Add(frameButtonVolver, 0, 3, 6, 7);
+            //GridRegister.Children.Add(frameButtonRegister, 0, 3, 3, 4);
 
-            //GridMain.Children.Add(GridLogin, 0, 3, 2, 3);
-            //GridMain.Children.Add(GridRegister, 0, 3, 2, 3);
+            ////GridRegister.Children.Add(new BoxView
+            ////{
+            ////    HeightRequest = 4,
+            ////    //BackgroundColor = Color.FromHex("#f2f1f1"),
+            ////    BackgroundColor = Color.Black,
+            ////    VerticalOptions = LayoutOptions.Start
+            ////}, 0, 3, 2, 3);
+
+
+            ////var LabelButtonVolver = new Label()
+            ////{
+            ////    FontSize = 14,
+            ////    HorizontalTextAlignment = TextAlignment.Center,
+            ////    VerticalTextAlignment = TextAlignment.Center,
+            ////    Margin = new Thickness(0),
+            ////    TextColor = Color.White,
+            ////    Text = "Volver"
+            ////};
+
+            ////var GridVolverBoton = new Grid()
+            ////{
+            ////    BackgroundColor = Color.Transparent,
+            ////    VerticalOptions = LayoutOptions.Center
+            ////};
+
+            ////GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            ////GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
+            ////GridVolverBoton.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            ////GridVolverBoton.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+            ////GridVolverBoton.Children.Add(LabelButtonVolver, 1, 0);
+
+            ////var frameButtonVolver = new Frame()
+            ////{
+            ////    Margin = new Thickness(20, 15, 20, 30),
+            ////    Padding = new Thickness(0),
+            ////    BackgroundColor = Color.FromHex("#F80061"),
+            ////    BorderColor = Color.Transparent,
+            ////    HeightRequest = 40,
+            ////    VerticalOptions = LayoutOptions.Center,
+            ////    Content = GridVolverBoton
+            ////};
+
+            ////TapGestureRecognizer tapButtonVolver = new TapGestureRecognizer();
+            ////tapButtonVolver.SetBinding(TapGestureRecognizer.CommandProperty, nameof(RegisterStepTwoViewModel.VolverCommand));
+            ////frameButtonVolver.GestureRecognizers.Add(tapButtonVolver);
+
+            ////GridRegister.Children.Add(frameButtonVolver, 0, 3, 6, 7);
+
+            ////GridMain.Children.Add(GridLogin, 0, 3, 2, 3);
+            ////GridMain.Children.Add(GridRegister, 0, 3, 2, 3);
             #endregion
+
+            #region Grid Information
+            var GridInformation = new Grid()
+            {
+                RowSpacing = 0,
+                BackgroundColor = Color.FromHex("#eeeeee")
+            };
+
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+            GridInformation.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+            GridInformation.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            GridInformation.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(4, GridUnitType.Star) });
+            GridInformation.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            CachedImage InfoPerIcon = new CachedImage
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                HeightRequest = 24,
+                WidthRequest = 24,
+                Source = "resource://TuFarmaApp.Img.GoMenu.png",
+                Margin = new Thickness(30, 20, 0, 0)
+            };
+            GridInformation.Children.Add(InfoPerIcon, 0, 1, 0, 1);
+
+            var LabelPersonal = new Label()
+            {
+                FontSize = size,
+                Text = "Datos Personales",
+                Margin = new Thickness(0, 20, 20, 0)
+            };
+            //PickerEstado.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickEstado));
+
+            //var FrameLabelPersonal = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    Margin = new Thickness(20, 20, 20, 0),
+            //    BorderColor = Color.Transparent,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    WidthRequest = (App.screenWidth / 2.2),
+            //    Content = LabelPersonal
+            //};
+            GridInformation.Children.Add(LabelPersonal, 1, 3, 0, 1);
+
+            CachedImage UbicacionIcon = new CachedImage
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                HeightRequest = 24,
+                WidthRequest = 24,
+                Source = "resource://TuFarmaApp.Img.GoMenu.png",
+                Margin = new Thickness(30, 20, 0, 0)
+            };
+            GridInformation.Children.Add(UbicacionIcon, 0, 1, 1, 2);
+
+            var LabelUbicacion = new Label()
+            {
+                FontSize = size,
+                Margin = new Thickness(0, 20, 20, 0),
+                Text = "Ubicación"
+            };
+            //PickerMunicipio.SetBinding(PickerCustom.ItemsSourceProperty, nameof(RegisterStepTwoViewModel.pickMunicipio));
+
+            //var FramePickerMunicipio = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    Margin = new Thickness(20, 30, 20, 0),
+            //    BorderColor = Color.Transparent,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    WidthRequest = (App.screenWidth / 2.2),
+            //    Content = PickerMunicipio
+            //};
+
+            GridInformation.Children.Add(LabelUbicacion, 1, 3, 1, 2);
+
+            CachedImage SesionIcon = new CachedImage
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                HeightRequest = 24,
+                WidthRequest = 24,
+                Source = "resource://TuFarmaApp.Img.GoMenu.png",
+                Margin = new Thickness(30, 20, 0, 20)
+            };
+            GridInformation.Children.Add(SesionIcon, 0, 1, 2, 3);
+
+            var LabelSesion = new Label()
+            {
+                FontSize = size,
+                Margin = new Thickness(0, 20, 0, 20),
+                Text = "Datos de la sesión"
+            };
+
+            GridInformation.Children.Add(LabelSesion, 1, 3, 2, 3);
+
+            //GridInformation.Children.Add(frameButtonRegister, 0, 3, 2, 3);
+            #endregion
+
+            //StackLayout TitleFilter = new StackLayout
+            //{
+            //    Orientation = StackOrientation.Horizontal,
+            //    //VerticalOptions = LayoutOptions.End,
+            //    Margin = new Thickness(20, 5),
+            //    Spacing = 10,
+            //    Children =
+            //    {
+            //        FiltrarIcon,
+            //        filtrar
+            //    }
+            //};
+            //TapGestureRecognizer tapTitleFilter = new TapGestureRecognizer();
+            //tapTitleFilter.SetBinding(TapGestureRecognizer.CommandProperty, nameof(MenuLoginViewModel.ActivarFilterCommand));
+            //TitleFilter.GestureRecognizers.Add(tapTitleFilter);
+
+            //BoxView BoxSuperior = new BoxView
+            //{
+            //    HeightRequest = 0.5,
+            //    //BackgroundColor = Color.FromHex("#f2f1f1"),
+            //    BackgroundColor = Color.Black,
+            //    VerticalOptions = LayoutOptions.Start
+            //};
+            //BoxSuperior.SetBinding(BoxView.IsVisibleProperty, nameof(MenuLoginViewModel.IsVisibleFrameFilter));
+
+            //Frame FrameFilter = new Frame()
+            //{
+            //    Padding = new Thickness(0),
+            //    BackgroundColor = Color.White,
+            //    BorderColor = Color.Black,
+            //    IsClippedToBounds = true,
+            //    CornerRadius = 10,
+            //    Content = GridRegister
+            //};
+            //FrameFilter.SetBinding(Frame.IsVisibleProperty, nameof(MenuLoginViewModel.IsVisibleFrameFilter));
+
+
+            //BoxView BoxInferior = new BoxView
+            //{
+            //    HeightRequest = 0.5,
+            //    //BackgroundColor = Color.FromHex("#f2f1f1"),
+            //    BackgroundColor = Color.Black,
+            //    VerticalOptions = LayoutOptions.Start
+            //};
+
+            StackLayout TitleInformacion = new StackLayout
+            {
+                Orientation = StackOrientation.Horizontal,
+                //VerticalOptions = LayoutOptions.End,
+                Margin = new Thickness(20, 5),
+                Spacing = 10,
+                Children =
+                {
+                    InformationIcon,
+                    Information
+                }
+            };
+            TapGestureRecognizer tapTitleInformacion = new TapGestureRecognizer();
+            tapTitleInformacion.SetBinding(TapGestureRecognizer.CommandProperty, nameof(MenuLoginViewModel.ActivarInformationCommand));
+            TitleInformacion.GestureRecognizers.Add(tapTitleInformacion);
+
+            BoxView BoxInferiorInf = new BoxView
+            {
+                HeightRequest = 0.5,
+                //BackgroundColor = Color.FromHex("#f2f1f1"),
+                BackgroundColor = Color.Black,
+                VerticalOptions = LayoutOptions.Start
+            };
+
+            BoxView BoxInfSuperior = new BoxView
+            {
+                HeightRequest = 0.5,
+                //BackgroundColor = Color.FromHex("#f2f1f1"),
+                BackgroundColor = Color.Black,
+                VerticalOptions = LayoutOptions.Start
+            };
+            BoxInfSuperior.SetBinding(BoxView.IsVisibleProperty, nameof(MenuLoginViewModel.IsVisibleFrameInformation));
+
+            Frame FrameInformation = new Frame()
+            {
+                Padding = new Thickness(0),
+                BackgroundColor = Color.White,
+                BorderColor = Color.Black,
+                IsClippedToBounds = true,
+                CornerRadius = 10,
+                Content = GridInformation
+            };
+            FrameInformation.SetBinding(Frame.IsVisibleProperty, nameof(MenuLoginViewModel.IsVisibleFrameInformation));
 
             ListViewMenu.Header = new StackLayout
             {
@@ -307,209 +631,24 @@ namespace TuFarmaApp.Views
                 {
                     imgProfile,
                     LabelUserName,
-                    new StackLayout
-                    {
-                        Orientation = StackOrientation.Horizontal,
-                        Margin = new Thickness(20, 10),
-                        Spacing = 10,
-                        Children =
-                        {
-                            FiltrarIcon,
-                            filtrar
-                        }
-                    },
-                    new Frame()
-                    {
-                        Padding = new Thickness(10),
-                        BackgroundColor = Color.White,
-                        BorderColor = Color.Black,
-                        IsClippedToBounds = true,
-                        CornerRadius = 10,
-                        Content = GridRegister
-                    }
+                    //TitleFilter,
+                    //BoxSuperior,                    
+                    //FrameFilter,
+                    //BoxInferior,
+                    TitleInformacion,
+                    BoxInfSuperior,
+                    FrameInformation,
+                    BoxInferiorInf
                 }
             };
 
-
-            //var IconLogoTapGest = new TapGestureRecognizer();
-            //var ListViewMenu = new ListView
-            //{
-            //    RowHeight = 45,
-            //    HeaderTemplate = new DataTemplate(() =>
-            //    {
-            //        CircleImage IconLogo = new CircleImage
-            //        {
-            //            BorderColor = Color.FromHex("#E5E7E9"),
-            //            BorderThickness = 1,
-            //            Aspect = Aspect.AspectFill,
-            //            Margin = new Thickness(0, 20, 0, 0),
-            //            HeightRequest = 60,
-            //            WidthRequest = 60,
-            //            Source = ImageSource.FromResource("TuFarmaApp.Img.no-picture-user.jpg"),
-            //            BackgroundColor = Color.Black
-            //        };
-
-            //        var LabelUserName = new Label
-            //        {
-            //            HorizontalTextAlignment = TextAlignment.Center,
-            //            FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
-            //            FontAttributes = FontAttributes.Bold,
-            //            VerticalTextAlignment = TextAlignment.Center,
-            //            Text = "Darwin Sansonetti"
-            //        };
-
-            //        //IconLogo.GestureRecognizers.Add(IconLogoTapGest);
-
-            //        //LabelUserName.SetBinding(Label.TextProperty, nameof(UserModel.name));
-
-            //        var imgProfile = new CircleImage
-            //        {
-            //            BorderColor = Color.FromHex("#E5E7E9"),
-            //            BorderThickness = 1,
-            //            HorizontalOptions = LayoutOptions.Center,
-            //            Aspect = Aspect.AspectFill,
-            //            HeightRequest = 150,
-            //            WidthRequest = 150,
-            //            Source = ImageSource.FromResource("TuFarmaApp.Img.Cam.png"),
-            //            //Margin = new Thickness(0, 30, 0, 60),
-            //        };
-            //        //var img = new CachedImage();
-            //        //imgProfile.SetBinding(CircleImage.SourceProperty, nameof(UserModel.picture));
-
-            //        Grid grid = new Grid
-            //        {
-            //            Margin = new Thickness(20, 20, 20, 0),
-            //        };
-            //        grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(30) });
-            //        grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            //        grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(40) });
-            //        grid.Children.Add(LabelUserName, 1, 0);
-            //        grid.Children.Add(imgProfile, 2, 0);
-
-            //        return new StackLayout
-            //        {
-            //            Children =
-            //            {
-            //                IconLogo,
-            //                grid
-            //            }
-            //        };
-            //    }),
-            //    ItemsSource = new List<string>
-            //    {
-            //        "texto1",
-            //        "Texto2",
-            //        "Texto3"
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Información personal",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.Usuario.svg",
-            //        //    PageName = nameof(InfoUser)
-            //        //},
-            //        ////new MenuModel
-            //        ////{
-            //        ////    Text = "Métodos de pago",
-            //        ////    Icon =  "Chappsy2.Img.UserIcon.Wallet.svg",
-            //        ////    PageName = nameof(MethodPay)
-            //        ////},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Carrito de compras",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.commerce-and-shopping.svg",
-            //        //    PageName = nameof(Carrito)
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Direcciones de envío",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.Direcciones.svg",
-            //        //    PageName = nameof(Addres)
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Mis compras",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.MisCompras.svg",
-            //        //    PageName = nameof(MisCompras)
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Mis ventas",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.venta.svg",
-            //        //    PageName = $"{nameof(MySalesTabPage)}"
-            //        //    //PageName = $"{nameof(MySalesTabPage)}/{nameof(MySalesPage)}"
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Lugares de reparto",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.gps.svg",
-            //        //    PageName = $"{nameof(RouteBuy1)}"
-            //        //    //PageName = $"{nameof(MySalesTabPage)}/{nameof(MySalesPage)}"
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Crea tu tienda web",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.smartphone.svg",
-            //        //    PageName = nameof(NewShop)
-            //        //    //PageName = nameof(DetailBuy)
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Información general",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.Info.svg",
-            //        //    PageName = nameof(InfoGeneral)
-            //        //},
-            //        //new MenuModel
-            //        //{
-            //        //    Text = "Cerrar sesión",
-            //        //    Icon =  "Chappsy2.Img.UserIcon.saliir.svg",
-            //        //    PageName = nameof(LoginPage)
-            //        //},
-            //    },
-            //    ItemTemplate = new DataTemplate(() =>
-            //    {
-            //        SvgCachedImage ButtonIcon = new SvgCachedImage
-            //        {
-            //            HorizontalOptions = LayoutOptions.Start,
-            //            HeightRequest = 18,
-            //            WidthRequest = 18,
-            //            Source = "resource://TuFarmaApp.Img.Svg.conversation.svg",
-            //        };
-            //        //ButtonIcon.SetBinding(SvgCachedImage.SourceProperty,
-            //        //    nameof(MenuModel.Icon),
-            //        //    stringFormat: "resource://{0:F2}");
-
-            //        Label label = new Label
-            //        {
-            //            VerticalTextAlignment = TextAlignment.Center,
-            //            FontSize = size,
-            //            Text = "Texto"
-            //        };
-            //        //label.SetBinding(Label.TextProperty, nameof(MenuModel.Text));
-
-            //        return new ViewCell
-            //        {
-            //            View = new StackLayout
-            //            {
-            //                Orientation = StackOrientation.Horizontal,
-            //                Margin = new Thickness(20, 10),
-            //                Spacing = 10,
-            //                Children =
-            //                {
-            //                    ButtonIcon,
-            //                    label
-            //                }
-            //            }
-            //        };
-            //    })
-            //};
-            //ListViewMenu.SetBinding(ListView.HeaderProperty, nameof(MenuPageViewModel.userSession));
-
-            //var ListViewTapCommand = new EventToCommandBehavior
-            //{
-            //    EventName = nameof(ListView.ItemTapped),
-            //    EventArgsParameterPath = nameof(ItemTappedEventArgs.Item)
-            //};
-            //ListViewTapCommand.SetBinding(EventToCommandBehavior.CommandProperty, nameof(MenuPageViewModel.CommandMenuTap));
-            //ListViewMenu.Behaviors.Add(ListViewTapCommand);
+            var ListViewTapCommand = new EventToCommandBehavior
+            {
+                EventName = nameof(ListView.ItemTapped),
+                EventArgsParameterPath = nameof(ItemTappedEventArgs.Item)
+            };
+            ListViewTapCommand.SetBinding(EventToCommandBehavior.CommandProperty, nameof(MenuLoginViewModel.CommandMenuTap));
+            ListViewMenu.Behaviors.Add(ListViewTapCommand);
 
             var MainContainer = new Grid();
             MainContainer.Children.Add(ListViewMenu, 0, 0);

@@ -36,11 +36,11 @@ namespace TuFarmaApp.Droid
             base.OnCreate(savedInstanceState);
 
 
-            //#region INICIALIZACION DE PAQUETES NUGGETS
-            //UserDialogs.Init(this);
+            #region INICIALIZACION DE PAQUETES NUGGETS
+            UserDialogs.Init(this);
             //Forms.SetFlags("CarouselView_Experimental");
             //Rg.Plugins.Popup.Popup.Init(this);
-            //#endregion
+            #endregion
 
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

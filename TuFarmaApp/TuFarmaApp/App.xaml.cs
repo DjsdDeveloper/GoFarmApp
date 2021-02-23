@@ -1,3 +1,4 @@
+using Acr.UserDialogs;
 using Prism;
 using Prism.DryIoc;
 using Prism.Ioc;
@@ -70,6 +71,7 @@ namespace TuFarmaApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            #region Declaracion de vistas
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -83,8 +85,12 @@ namespace TuFarmaApp
             containerRegistry.RegisterForNavigation<TerminosPage, TerminosPageViewModel>();
             containerRegistry.RegisterForNavigation<OlvidarPage, OlvidarPageViewModel>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
-            containerRegistry.RegisterForNavigation<MenuLogin, MenuLoginViewModel>(); 
+            containerRegistry.RegisterForNavigation<MenuLogin, MenuLoginViewModel>();
+            #endregion
 
+            #region Declaracion de interfaz
+            containerRegistry.RegisterInstance<IUserDialogs>(UserDialogs.Instance);
+            #endregion
 
 
             //#region REGISTRO DE POPUD
