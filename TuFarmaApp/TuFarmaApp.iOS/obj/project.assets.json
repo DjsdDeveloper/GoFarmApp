@@ -209,6 +209,21 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Plugin.Permissions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
+        }
+      },
       "Portable.BouncyCastle/1.8.5": {
         "type": "package",
         "compile": {
@@ -887,6 +902,7 @@
           "CsvHelper": "21.0.6",
           "Flurl.Http": "3.0.1",
           "Newtonsoft.Json": "12.0.3",
+          "Plugin.Permissions": "6.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Prism.Plugin.Popups": "7.2.0.1046",
           "PropertyChanged.Fody": "3.3.1",
@@ -1117,6 +1133,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Plugin.Permissions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.5": {
@@ -1769,6 +1800,7 @@
           "CsvHelper": "21.0.6",
           "Flurl.Http": "3.0.1",
           "Newtonsoft.Json": "12.0.3",
+          "Plugin.Permissions": "6.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Prism.Plugin.Popups": "7.2.0.1046",
           "PropertyChanged.Fody": "3.3.1",
@@ -1999,6 +2031,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Plugin.Permissions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.5": {
@@ -2654,6 +2701,7 @@
           "CsvHelper": "21.0.6",
           "Flurl.Http": "3.0.1",
           "Newtonsoft.Json": "12.0.3",
+          "Plugin.Permissions": "6.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Prism.Plugin.Popups": "7.2.0.1046",
           "PropertyChanged.Fody": "3.3.1",
@@ -2884,6 +2932,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Plugin.Permissions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.5": {
@@ -3539,6 +3602,7 @@
           "CsvHelper": "21.0.6",
           "Flurl.Http": "3.0.1",
           "Newtonsoft.Json": "12.0.3",
+          "Plugin.Permissions": "6.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Prism.Plugin.Popups": "7.2.0.1046",
           "PropertyChanged.Fody": "3.3.1",
@@ -3989,6 +4053,37 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Plugin.Permissions/6.0.1": {
+      "sha512": "na/0FNhyKmSicANWZMLSM0y/FW2AvLoawX3lsvBpELwP15sdJRyuBhRKk1OQjRoNrmTIewcON1tJFyydjMGWcA==",
+      "type": "package",
+      "path": "plugin.permissions/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Permissions.dll",
+        "lib/monoandroid10.0/Plugin.Permissions.pdb",
+        "lib/monoandroid80/Plugin.Permissions.dll",
+        "lib/monoandroid80/Plugin.Permissions.pdb",
+        "lib/monoandroid81/Plugin.Permissions.dll",
+        "lib/monoandroid81/Plugin.Permissions.pdb",
+        "lib/monoandroid90/Plugin.Permissions.dll",
+        "lib/monoandroid90/Plugin.Permissions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.pdb",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.pdb",
+        "lib/uap10.0.16299/Plugin.Permissions.dll",
+        "lib/uap10.0.16299/Plugin.Permissions.pdb",
+        "lib/uap10.0.16299/Plugin.Permissions.pri",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.pdb",
+        "lib/xamarintvos10/Plugin.Permissions.dll",
+        "lib/xamarintvos10/Plugin.Permissions.pdb",
+        "plugin.permissions.6.0.1.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
       ]
     },
     "Portable.BouncyCastle/1.8.5": {
@@ -6164,6 +6259,7 @@
       "Flurl.Http >= 3.0.1",
       "Fody >= 6.3.0",
       "Newtonsoft.Json >= 12.0.3",
+      "Plugin.Permissions >= 6.0.1",
       "Prism.DryIoc.Forms >= 8.0.0.1909",
       "Prism.Plugin.Popups >= 7.2.0.1046",
       "PropertyChanged.Fody >= 3.3.1",
@@ -6253,6 +6349,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           },
           "Prism.DryIoc.Forms": {
             "target": "Package",

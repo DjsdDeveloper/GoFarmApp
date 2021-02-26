@@ -85,8 +85,20 @@ namespace TuFarmaApp.Views
                     },
                     new MenuModel
                     {
+                        Text = "Top tiendas",
+                        Icon =  "TuFarmaApp.Img.Svg.conversation.svg",
+                        //PageName = nameof(NewShop)
+                    },
+                    new MenuModel
+                    {
                         Text = "Sitios visitados",
                         Icon =  "TuFarmaApp.Img.Svg.SvgMenu.viewrecent.svg",
+                        //PageName = $"{nameof(RouteBuy1)}"
+                    },
+                    new MenuModel
+                    {
+                        Text = "Favoritos",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.favorito.svg",
                         //PageName = $"{nameof(RouteBuy1)}"
                     },
                     new MenuModel
@@ -101,12 +113,6 @@ namespace TuFarmaApp.Views
                         Icon =  "TuFarmaApp.Img.Svg.SvgMenu.ayuda.svg",
                         //PageName = nameof(MisCompras)
                     },
-                    //new MenuModel
-                    //{
-                    //    Text = "Crea tu tienda web",
-                    //    Icon =  "TuFarmaApp.Img.Svg.conversation.svg",
-                    //    //PageName = nameof(NewShop)
-                    //},
                     //new MenuModel
                     //{
                     //    Text = "Información general",

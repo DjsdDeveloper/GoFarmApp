@@ -5,8 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Img\BannerHome\1.jpg" />
+    <None Remove="Img\BannerHome\2.jpg" />
+    <None Remove="Img\BannerHome\3.jpg" />
+    <None Remove="Img\BannerHome\4.jpg" />
+    <None Remove="Img\BannerHome\5.jpg" />
+    <None Remove="Img\BannerHome\6.jpg" />
     <None Remove="Img\Cam.png" />
+    <None Remove="Img\Camara.png" />
     <None Remove="Img\FondoBanner.png" />
+    <None Remove="Img\Galeria.png" />
     <None Remove="Img\GoApp.png" />
     <None Remove="Img\GoFarmaAppLogo.png" />
     <None Remove="Img\GoMenu.png" />
@@ -19,6 +27,7 @@
     <None Remove="Img\Svg\Login.svg" />
     <None Remove="Img\Svg\Password.svg" />
     <None Remove="Img\Svg\SvgMenu\ayuda.svg" />
+    <None Remove="Img\Svg\SvgMenu\favorito.svg" />
     <None Remove="Img\Svg\SvgMenu\filter.svg" />
     <None Remove="Img\Svg\SvgMenu\history.svg" />
     <None Remove="Img\Svg\SvgMenu\info.svg" />
@@ -32,11 +41,20 @@
     <None Remove="Img\Svg\UserAccount.svg" />
     <None Remove="Img\Svg\UserLog.svg" />
     <None Remove="Img\Svg\visible.svg" />
+    <None Remove="Img\TopeMargarita.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Img\BannerHome\1.jpg" />
+    <EmbeddedResource Include="Img\BannerHome\2.jpg" />
+    <EmbeddedResource Include="Img\BannerHome\3.jpg" />
+    <EmbeddedResource Include="Img\BannerHome\4.jpg" />
+    <EmbeddedResource Include="Img\BannerHome\5.jpg" />
+    <EmbeddedResource Include="Img\BannerHome\6.jpg" />
     <EmbeddedResource Include="Img\Cam.png" />
+    <EmbeddedResource Include="Img\Camara.png" />
     <EmbeddedResource Include="Img\FondoBanner.png" />
+    <EmbeddedResource Include="Img\Galeria.png" />
     <EmbeddedResource Include="Img\GoApp.png" />
     <EmbeddedResource Include="Img\GoFarmaAppLogo.png" />
     <EmbeddedResource Include="Img\GoMenu.png" />
@@ -49,6 +67,7 @@
     <EmbeddedResource Include="Img\Svg\Login.svg" />
     <EmbeddedResource Include="Img\Svg\Password.svg" />
     <EmbeddedResource Include="Img\Svg\SvgMenu\ayuda.svg" />
+    <EmbeddedResource Include="Img\Svg\SvgMenu\favorito.svg" />
     <EmbeddedResource Include="Img\Svg\SvgMenu\filter.svg" />
     <EmbeddedResource Include="Img\Svg\SvgMenu\history.svg" />
     <EmbeddedResource Include="Img\Svg\SvgMenu\info.svg" />
@@ -62,6 +81,7 @@
     <EmbeddedResource Include="Img\Svg\UserAccount.svg" />
     <EmbeddedResource Include="Img\Svg\UserLog.svg" />
     <EmbeddedResource Include="Img\Svg\visible.svg" />
+    <EmbeddedResource Include="Img\TopeMargarita.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,6 +97,7 @@
     </PackageReference>
     <PackageReference Include="modernhttpclient-updated" Version="3.4.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
     <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.3.1" />
     <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.10" />

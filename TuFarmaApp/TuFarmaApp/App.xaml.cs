@@ -6,7 +6,9 @@ using Prism.Plugin.Popups;
 using System;
 using TuFarmaApp.Styles;
 using TuFarmaApp.ViewModels;
+using TuFarmaApp.ViewModels.Popup;
 using TuFarmaApp.Views;
+using TuFarmaApp.Views.Popup;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
@@ -18,6 +20,7 @@ namespace TuFarmaApp
         public string navigationPage = nameof(NavigationPage);
 
         public static int screenHeight, screenWidth;
+        public static int IndexSetting = 1;
 
         public App(IPlatformInitializer initializer)
             : base(initializer)
@@ -76,7 +79,6 @@ namespace TuFarmaApp
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-
             containerRegistry.RegisterForNavigation<LoginInit, LoginInitViewModel>(); 
             containerRegistry.RegisterForNavigation<RegisterStepOne, RegisterStepOneViewModel>(); 
             containerRegistry.RegisterForNavigation<RegisterStepTwo, RegisterStepTwoViewModel>(); 
@@ -93,9 +95,11 @@ namespace TuFarmaApp
             #endregion
 
 
-            //#region REGISTRO DE POPUD
+            #region REGISTRO DE POPUD
             //containerRegistry.RegisterPopupNavigationService();
-            //#endregion
+
+            containerRegistry.RegisterForNavigation<PopupPhoto, PopupPhotoViewModel>();
+            #endregion
         }
     }
 }

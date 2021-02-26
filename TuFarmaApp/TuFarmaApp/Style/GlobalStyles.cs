@@ -8,7 +8,7 @@ namespace TuFarmaApp.Styles
     public class GlobalStyles : ResourceDictionary
     {
         //public static readonly ImageSource LogoPath = ImageSource.FromResource("TuFarmaApp.Img.GoFarmapp2.png";
-        public static readonly string PrimaryColorHex = "#04554C";
+        public static readonly string PrimaryColorHex = "#0B3C93";
 
         public static readonly Color PrimaryColor = Color.FromHex(PrimaryColorHex);
         public static readonly Color SecondColor = Color.FromHex("#81b71b");

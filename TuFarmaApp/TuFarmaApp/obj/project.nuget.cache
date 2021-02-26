@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "duYjqaamAByXGnhZjzfsQljGprVEhPv0+GG2gpWsOBiNFRIHsCxW/6086t6mBRlMqf9UZV3aKyDUc0cW3ttE9Q==",
+  "dgSpecHash": "tlSoAGIZrSTMXawcnYJQ5Ih+EsvKo4BXOLTcriWvkkZqVTiWIfysLqMtFSVAynvBab8IJYRRXuiOeXtsM40Tzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\TuFarmaApp\\TuFarmaApp\\TuFarmaApp\\TuFarmaApp.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\prism.dryioc.forms\\8.0.0.1909\\prism.dryioc.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",

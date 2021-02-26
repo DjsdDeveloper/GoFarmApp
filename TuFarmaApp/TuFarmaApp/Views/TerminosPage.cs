@@ -33,7 +33,7 @@ namespace TuFarmaApp.Views
             GridFondo.Children.Add(new BoxView()
             {
                 HeightRequest = (HeightView / 2),
-                BackgroundColor = Color.FromHex("#04554C")
+                BackgroundColor = Color.FromHex("#0B3C93")
             }, 0, 3, 0, 1);
 
             //GridFondo.Children.Add(new BoxView()
@@ -50,15 +50,15 @@ namespace TuFarmaApp.Views
             GridMain.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             GridMain.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
 
-            GridMain.Children.Add(new Image
-            {
-                HorizontalOptions = LayoutOptions.Center,
-                //HeightRequest = 80,
-                //WidthRequest = 80,
-                HeightRequest = 100,
-                WidthRequest = (WidthView / 3),
-                Source = ImageSource.FromResource("TuFarmaApp.Img.GoApp.png")
-            }, 0, 0);
+            //GridMain.Children.Add(new Image
+            //{
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    //HeightRequest = 80,
+            //    //WidthRequest = 80,
+            //    HeightRequest = 100,
+            //    WidthRequest = (WidthView / 3),
+            //    Source = ImageSource.FromResource("TuFarmaApp.Img.GoApp.png")
+            //}, 0, 0);
 
             #region Grid Terminos
             var GridTerminos = new Grid()
@@ -88,7 +88,7 @@ namespace TuFarmaApp.Views
                 VerticalOptions = LayoutOptions.Center,
                 Text = "Términos y condiciones",
                 FontSize = 18,
-                Margin = new Thickness(0, 20, 0, 0)
+                Margin = new Thickness(0, 55, 0, 0)
             }, 0, 3, 0, 1);
 
             GridTerminos.Children.Add(new Label
@@ -147,6 +147,7 @@ namespace TuFarmaApp.Views
             GridMain.Children.Add(new Frame()
             {
                 Padding = new Thickness(10),
+                Margin = new Thickness(0, 50, 0, 0),
                 BackgroundColor = Color.White,
                 BorderColor = Color.Transparent,
                 IsClippedToBounds = true,
@@ -155,7 +156,16 @@ namespace TuFarmaApp.Views
             }, 0, 1);
 
 
-
+            GridMain.Children.Add(new Image
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Start,
+                HeightRequest = 120,
+                WidthRequest = 120,
+                //HeightRequest = 100,
+                //WidthRequest = (WidthView / 3),
+                Source = ImageSource.FromResource("TuFarmaApp.Img.TopeMargarita.png")
+            }, 0, 1, 0, 2);
 
 
             GridFondo.Children.Add(GridMain, 0, 3, 0, 2);

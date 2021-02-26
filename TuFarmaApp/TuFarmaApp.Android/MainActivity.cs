@@ -1,10 +1,14 @@
 ﻿using Acr.UserDialogs;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
+using Plugin.CurrentActivity;
 using Prism;
 using Prism.Ioc;
+using TuFarmaApp.Droid.DependencyInjection;
+using TuFarmaApp.Interfaces;
 using Xamarin.Forms;
 
 namespace TuFarmaApp.Droid
@@ -38,8 +42,10 @@ namespace TuFarmaApp.Droid
 
             #region INICIALIZACION DE PAQUETES NUGGETS
             UserDialogs.Init(this);
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
+            //Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             //Forms.SetFlags("CarouselView_Experimental");
-            //Rg.Plugins.Popup.Popup.Init(this);
+            Rg.Plugins.Popup.Popup.Init(this);
             #endregion
 
 
@@ -71,9 +77,21 @@ namespace TuFarmaApp.Droid
             LoadApplication(new App(new AndroidInitializer()));
         }
 
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            var Container = ((TuFarmaApp.App)Xamarin.Forms.Application.Current).Container;
+            var service = (MultiMediaPickerService)Container.Resolve<IMultiMediaPickerService>();
+            service.OnActivityResult(requestCode, resultCode, data);
+            //MultiMediaPickerService.SharedInstance.OnActivityResult(requestCode, resultCode, data);
+        }
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }

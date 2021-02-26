@@ -6140,6 +6140,228 @@ namespace TuFarmaApp.Droid
 			global::Plugin.Media.Resource.Styleable.GradientColor_android_tileMode = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Plugin.Media.Resource.Styleable.GradientColor_android_type = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Plugin.Media.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::TuFarmaApp.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Plugin.Permissions.Resource.Attribute.alpha = global::TuFarmaApp.Droid.Resource.Attribute.alpha;
+			global::Plugin.Permissions.Resource.Attribute.coordinatorLayoutStyle = global::TuFarmaApp.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Plugin.Permissions.Resource.Attribute.font = global::TuFarmaApp.Droid.Resource.Attribute.font;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderAuthority = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderCerts = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderCerts;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderFetchStrategy = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderFetchTimeout = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderPackage = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderPackage;
+			global::Plugin.Permissions.Resource.Attribute.fontProviderQuery = global::TuFarmaApp.Droid.Resource.Attribute.fontProviderQuery;
+			global::Plugin.Permissions.Resource.Attribute.fontStyle = global::TuFarmaApp.Droid.Resource.Attribute.fontStyle;
+			global::Plugin.Permissions.Resource.Attribute.fontVariationSettings = global::TuFarmaApp.Droid.Resource.Attribute.fontVariationSettings;
+			global::Plugin.Permissions.Resource.Attribute.fontWeight = global::TuFarmaApp.Droid.Resource.Attribute.fontWeight;
+			global::Plugin.Permissions.Resource.Attribute.keylines = global::TuFarmaApp.Droid.Resource.Attribute.keylines;
+			global::Plugin.Permissions.Resource.Attribute.layout_anchor = global::TuFarmaApp.Droid.Resource.Attribute.layout_anchor;
+			global::Plugin.Permissions.Resource.Attribute.layout_anchorGravity = global::TuFarmaApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Plugin.Permissions.Resource.Attribute.layout_behavior = global::TuFarmaApp.Droid.Resource.Attribute.layout_behavior;
+			global::Plugin.Permissions.Resource.Attribute.layout_dodgeInsetEdges = global::TuFarmaApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Plugin.Permissions.Resource.Attribute.layout_insetEdge = global::TuFarmaApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::Plugin.Permissions.Resource.Attribute.layout_keyline = global::TuFarmaApp.Droid.Resource.Attribute.layout_keyline;
+			global::Plugin.Permissions.Resource.Attribute.statusBarBackground = global::TuFarmaApp.Droid.Resource.Attribute.statusBarBackground;
+			global::Plugin.Permissions.Resource.Attribute.ttcIndex = global::TuFarmaApp.Droid.Resource.Attribute.ttcIndex;
+			global::Plugin.Permissions.Resource.Color.browser_actions_bg_grey = global::TuFarmaApp.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Plugin.Permissions.Resource.Color.browser_actions_divider_color = global::TuFarmaApp.Droid.Resource.Color.browser_actions_divider_color;
+			global::Plugin.Permissions.Resource.Color.browser_actions_text_color = global::TuFarmaApp.Droid.Resource.Color.browser_actions_text_color;
+			global::Plugin.Permissions.Resource.Color.browser_actions_title_color = global::TuFarmaApp.Droid.Resource.Color.browser_actions_title_color;
+			global::Plugin.Permissions.Resource.Color.notification_action_color_filter = global::TuFarmaApp.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.Permissions.Resource.Color.notification_icon_bg_color = global::TuFarmaApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.Permissions.Resource.Color.ripple_material_light = global::TuFarmaApp.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.Permissions.Resource.Color.secondary_text_default_material_light = global::TuFarmaApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.Permissions.Resource.Dimension.browser_actions_context_menu_max_width = global::TuFarmaApp.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Plugin.Permissions.Resource.Dimension.browser_actions_context_menu_min_padding = global::TuFarmaApp.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Plugin.Permissions.Resource.Dimension.compat_button_inset_horizontal_material = global::TuFarmaApp.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Plugin.Permissions.Resource.Dimension.compat_button_inset_vertical_material = global::TuFarmaApp.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Plugin.Permissions.Resource.Dimension.compat_button_padding_horizontal_material = global::TuFarmaApp.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Plugin.Permissions.Resource.Dimension.compat_button_padding_vertical_material = global::TuFarmaApp.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Plugin.Permissions.Resource.Dimension.compat_control_corner_material = global::TuFarmaApp.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Plugin.Permissions.Resource.Dimension.compat_notification_large_icon_max_height = global::TuFarmaApp.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Plugin.Permissions.Resource.Dimension.compat_notification_large_icon_max_width = global::TuFarmaApp.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Plugin.Permissions.Resource.Dimension.notification_action_icon_size = global::TuFarmaApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.Permissions.Resource.Dimension.notification_action_text_size = global::TuFarmaApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.Permissions.Resource.Dimension.notification_big_circle_margin = global::TuFarmaApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.Permissions.Resource.Dimension.notification_content_margin_start = global::TuFarmaApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.Permissions.Resource.Dimension.notification_large_icon_height = global::TuFarmaApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.Permissions.Resource.Dimension.notification_large_icon_width = global::TuFarmaApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.Permissions.Resource.Dimension.notification_main_column_padding_top = global::TuFarmaApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.Permissions.Resource.Dimension.notification_media_narrow_margin = global::TuFarmaApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.Permissions.Resource.Dimension.notification_right_icon_size = global::TuFarmaApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.Permissions.Resource.Dimension.notification_right_side_padding_top = global::TuFarmaApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.Permissions.Resource.Dimension.notification_small_icon_background_padding = global::TuFarmaApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.Permissions.Resource.Dimension.notification_small_icon_size_as_large = global::TuFarmaApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.Permissions.Resource.Dimension.notification_subtext_size = global::TuFarmaApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.Permissions.Resource.Dimension.notification_top_pad = global::TuFarmaApp.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.Permissions.Resource.Dimension.notification_top_pad_large_text = global::TuFarmaApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.Permissions.Resource.Drawable.notification_action_background = global::TuFarmaApp.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg_low = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg_low_normal = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg_low_pressed = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg_normal = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.Permissions.Resource.Drawable.notification_bg_normal_pressed = global::TuFarmaApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.Permissions.Resource.Drawable.notification_icon_background = global::TuFarmaApp.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.Permissions.Resource.Drawable.notification_template_icon_bg = global::TuFarmaApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.Permissions.Resource.Drawable.notification_template_icon_low_bg = global::TuFarmaApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.Permissions.Resource.Drawable.notification_tile_bg = global::TuFarmaApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.Permissions.Resource.Drawable.notify_panel_notification_icon_bg = global::TuFarmaApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.Permissions.Resource.Id.accessibility_action_clickable_span = global::TuFarmaApp.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_0 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_1 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_10 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_11 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_12 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_13 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_14 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_15 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_16 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_17 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_18 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_19 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_2 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_20 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_21 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_22 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_23 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_24 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_25 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_26 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_27 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_28 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_29 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_3 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_30 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_31 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_4 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_5 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_6 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_7 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_8 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Plugin.Permissions.Resource.Id.accessibility_custom_action_9 = global::TuFarmaApp.Droid.Resource.Id.accessibility_custom_action_9;
+			global::Plugin.Permissions.Resource.Id.actions = global::TuFarmaApp.Droid.Resource.Id.actions;
+			global::Plugin.Permissions.Resource.Id.action_container = global::TuFarmaApp.Droid.Resource.Id.action_container;
+			global::Plugin.Permissions.Resource.Id.action_divider = global::TuFarmaApp.Droid.Resource.Id.action_divider;
+			global::Plugin.Permissions.Resource.Id.action_image = global::TuFarmaApp.Droid.Resource.Id.action_image;
+			global::Plugin.Permissions.Resource.Id.action_text = global::TuFarmaApp.Droid.Resource.Id.action_text;
+			global::Plugin.Permissions.Resource.Id.all = global::TuFarmaApp.Droid.Resource.Id.all;
+			global::Plugin.Permissions.Resource.Id.async = global::TuFarmaApp.Droid.Resource.Id.async;
+			global::Plugin.Permissions.Resource.Id.blocking = global::TuFarmaApp.Droid.Resource.Id.blocking;
+			global::Plugin.Permissions.Resource.Id.bottom = global::TuFarmaApp.Droid.Resource.Id.bottom;
+			global::Plugin.Permissions.Resource.Id.browser_actions_header_text = global::TuFarmaApp.Droid.Resource.Id.browser_actions_header_text;
+			global::Plugin.Permissions.Resource.Id.browser_actions_menu_items = global::TuFarmaApp.Droid.Resource.Id.browser_actions_menu_items;
+			global::Plugin.Permissions.Resource.Id.browser_actions_menu_item_icon = global::TuFarmaApp.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Plugin.Permissions.Resource.Id.browser_actions_menu_item_text = global::TuFarmaApp.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Plugin.Permissions.Resource.Id.browser_actions_menu_view = global::TuFarmaApp.Droid.Resource.Id.browser_actions_menu_view;
+			global::Plugin.Permissions.Resource.Id.center = global::TuFarmaApp.Droid.Resource.Id.center;
+			global::Plugin.Permissions.Resource.Id.center_horizontal = global::TuFarmaApp.Droid.Resource.Id.center_horizontal;
+			global::Plugin.Permissions.Resource.Id.center_vertical = global::TuFarmaApp.Droid.Resource.Id.center_vertical;
+			global::Plugin.Permissions.Resource.Id.chronometer = global::TuFarmaApp.Droid.Resource.Id.chronometer;
+			global::Plugin.Permissions.Resource.Id.clip_horizontal = global::TuFarmaApp.Droid.Resource.Id.clip_horizontal;
+			global::Plugin.Permissions.Resource.Id.clip_vertical = global::TuFarmaApp.Droid.Resource.Id.clip_vertical;
+			global::Plugin.Permissions.Resource.Id.dialog_button = global::TuFarmaApp.Droid.Resource.Id.dialog_button;
+			global::Plugin.Permissions.Resource.Id.end = global::TuFarmaApp.Droid.Resource.Id.end;
+			global::Plugin.Permissions.Resource.Id.fill = global::TuFarmaApp.Droid.Resource.Id.fill;
+			global::Plugin.Permissions.Resource.Id.fill_horizontal = global::TuFarmaApp.Droid.Resource.Id.fill_horizontal;
+			global::Plugin.Permissions.Resource.Id.fill_vertical = global::TuFarmaApp.Droid.Resource.Id.fill_vertical;
+			global::Plugin.Permissions.Resource.Id.forever = global::TuFarmaApp.Droid.Resource.Id.forever;
+			global::Plugin.Permissions.Resource.Id.icon = global::TuFarmaApp.Droid.Resource.Id.icon;
+			global::Plugin.Permissions.Resource.Id.icon_group = global::TuFarmaApp.Droid.Resource.Id.icon_group;
+			global::Plugin.Permissions.Resource.Id.info = global::TuFarmaApp.Droid.Resource.Id.info;
+			global::Plugin.Permissions.Resource.Id.italic = global::TuFarmaApp.Droid.Resource.Id.italic;
+			global::Plugin.Permissions.Resource.Id.left = global::TuFarmaApp.Droid.Resource.Id.left;
+			global::Plugin.Permissions.Resource.Id.line1 = global::TuFarmaApp.Droid.Resource.Id.line1;
+			global::Plugin.Permissions.Resource.Id.line3 = global::TuFarmaApp.Droid.Resource.Id.line3;
+			global::Plugin.Permissions.Resource.Id.none = global::TuFarmaApp.Droid.Resource.Id.none;
+			global::Plugin.Permissions.Resource.Id.normal = global::TuFarmaApp.Droid.Resource.Id.normal;
+			global::Plugin.Permissions.Resource.Id.notification_background = global::TuFarmaApp.Droid.Resource.Id.notification_background;
+			global::Plugin.Permissions.Resource.Id.notification_main_column = global::TuFarmaApp.Droid.Resource.Id.notification_main_column;
+			global::Plugin.Permissions.Resource.Id.notification_main_column_container = global::TuFarmaApp.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.Permissions.Resource.Id.right = global::TuFarmaApp.Droid.Resource.Id.right;
+			global::Plugin.Permissions.Resource.Id.right_icon = global::TuFarmaApp.Droid.Resource.Id.right_icon;
+			global::Plugin.Permissions.Resource.Id.right_side = global::TuFarmaApp.Droid.Resource.Id.right_side;
+			global::Plugin.Permissions.Resource.Id.start = global::TuFarmaApp.Droid.Resource.Id.start;
+			global::Plugin.Permissions.Resource.Id.tag_accessibility_actions = global::TuFarmaApp.Droid.Resource.Id.tag_accessibility_actions;
+			global::Plugin.Permissions.Resource.Id.tag_accessibility_clickable_spans = global::TuFarmaApp.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Plugin.Permissions.Resource.Id.tag_accessibility_heading = global::TuFarmaApp.Droid.Resource.Id.tag_accessibility_heading;
+			global::Plugin.Permissions.Resource.Id.tag_accessibility_pane_title = global::TuFarmaApp.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Plugin.Permissions.Resource.Id.tag_screen_reader_focusable = global::TuFarmaApp.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::Plugin.Permissions.Resource.Id.tag_transition_group = global::TuFarmaApp.Droid.Resource.Id.tag_transition_group;
+			global::Plugin.Permissions.Resource.Id.tag_unhandled_key_event_manager = global::TuFarmaApp.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Plugin.Permissions.Resource.Id.tag_unhandled_key_listeners = global::TuFarmaApp.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Plugin.Permissions.Resource.Id.text = global::TuFarmaApp.Droid.Resource.Id.text;
+			global::Plugin.Permissions.Resource.Id.text2 = global::TuFarmaApp.Droid.Resource.Id.text2;
+			global::Plugin.Permissions.Resource.Id.time = global::TuFarmaApp.Droid.Resource.Id.time;
+			global::Plugin.Permissions.Resource.Id.title = global::TuFarmaApp.Droid.Resource.Id.title;
+			global::Plugin.Permissions.Resource.Id.top = global::TuFarmaApp.Droid.Resource.Id.top;
+			global::Plugin.Permissions.Resource.Integer.status_bar_notification_info_maxnum = global::TuFarmaApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.Permissions.Resource.Layout.browser_actions_context_menu_page = global::TuFarmaApp.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Plugin.Permissions.Resource.Layout.browser_actions_context_menu_row = global::TuFarmaApp.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Plugin.Permissions.Resource.Layout.custom_dialog = global::TuFarmaApp.Droid.Resource.Layout.custom_dialog;
+			global::Plugin.Permissions.Resource.Layout.notification_action = global::TuFarmaApp.Droid.Resource.Layout.notification_action;
+			global::Plugin.Permissions.Resource.Layout.notification_action_tombstone = global::TuFarmaApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.Permissions.Resource.Layout.notification_template_custom_big = global::TuFarmaApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.Permissions.Resource.Layout.notification_template_icon_group = global::TuFarmaApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.Permissions.Resource.Layout.notification_template_part_chronometer = global::TuFarmaApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.Permissions.Resource.Layout.notification_template_part_time = global::TuFarmaApp.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.Permissions.Resource.String.status_bar_notification_info_overflow = global::TuFarmaApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.Permissions.Resource.Style.TextAppearance_Compat_Notification = global::TuFarmaApp.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Plugin.Permissions.Resource.Style.TextAppearance_Compat_Notification_Info = global::TuFarmaApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Plugin.Permissions.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::TuFarmaApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Plugin.Permissions.Resource.Style.TextAppearance_Compat_Notification_Time = global::TuFarmaApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Plugin.Permissions.Resource.Style.TextAppearance_Compat_Notification_Title = global::TuFarmaApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Plugin.Permissions.Resource.Style.Widget_Compat_NotificationActionContainer = global::TuFarmaApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Plugin.Permissions.Resource.Style.Widget_Compat_NotificationActionText = global::TuFarmaApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Plugin.Permissions.Resource.Style.Widget_Support_CoordinatorLayout = global::TuFarmaApp.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Plugin.Permissions.Resource.Styleable.ColorStateListItem = global::TuFarmaApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::Plugin.Permissions.Resource.Styleable.ColorStateListItem_alpha = global::TuFarmaApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Plugin.Permissions.Resource.Styleable.ColorStateListItem_android_alpha = global::TuFarmaApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Plugin.Permissions.Resource.Styleable.ColorStateListItem_android_color = global::TuFarmaApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_keylines = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Plugin.Permissions.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::TuFarmaApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_android_font = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_android_fontStyle = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_android_fontWeight = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_font = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_fontStyle = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_fontWeight = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Plugin.Permissions.Resource.Styleable.FontFamilyFont_ttcIndex = global::TuFarmaApp.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderAuthority = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderCerts = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderPackage = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Plugin.Permissions.Resource.Styleable.FontFamily_fontProviderQuery = global::TuFarmaApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor;
+			global::Plugin.Permissions.Resource.Styleable.GradientColorItem = global::TuFarmaApp.Droid.Resource.Styleable.GradientColorItem;
+			global::Plugin.Permissions.Resource.Styleable.GradientColorItem_android_color = global::TuFarmaApp.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Plugin.Permissions.Resource.Styleable.GradientColorItem_android_offset = global::TuFarmaApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_centerColor = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_centerX = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_centerY = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_endColor = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_endX = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_endY = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_gradientRadius = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_startColor = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_startX = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_startY = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_tileMode = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Plugin.Permissions.Resource.Styleable.GradientColor_android_type = global::TuFarmaApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Plugin.Permissions.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::TuFarmaApp.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Prism.Plugin.Popups.Resource.Animation.abc_fade_in = global::TuFarmaApp.Droid.Resource.Animation.abc_fade_in;
 			global::Prism.Plugin.Popups.Resource.Animation.abc_fade_out = global::TuFarmaApp.Droid.Resource.Animation.abc_fade_out;
 			global::Prism.Plugin.Popups.Resource.Animation.abc_grow_fade_in_from_bottom = global::TuFarmaApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -19850,317 +20072,317 @@ namespace TuFarmaApp.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F070007
-			public const int abc_ab_share_pack_mtrl_alpha = 2131165191;
-			
 			// aapt resource value: 0x7F070008
-			public const int abc_action_bar_item_background_material = 2131165192;
+			public const int abc_ab_share_pack_mtrl_alpha = 2131165192;
 			
 			// aapt resource value: 0x7F070009
-			public const int abc_btn_borderless_material = 2131165193;
+			public const int abc_action_bar_item_background_material = 2131165193;
 			
 			// aapt resource value: 0x7F07000A
-			public const int abc_btn_check_material = 2131165194;
+			public const int abc_btn_borderless_material = 2131165194;
 			
 			// aapt resource value: 0x7F07000B
-			public const int abc_btn_check_material_anim = 2131165195;
+			public const int abc_btn_check_material = 2131165195;
 			
 			// aapt resource value: 0x7F07000C
-			public const int abc_btn_check_to_on_mtrl_000 = 2131165196;
+			public const int abc_btn_check_material_anim = 2131165196;
 			
 			// aapt resource value: 0x7F07000D
-			public const int abc_btn_check_to_on_mtrl_015 = 2131165197;
+			public const int abc_btn_check_to_on_mtrl_000 = 2131165197;
 			
 			// aapt resource value: 0x7F07000E
-			public const int abc_btn_colored_material = 2131165198;
+			public const int abc_btn_check_to_on_mtrl_015 = 2131165198;
 			
 			// aapt resource value: 0x7F07000F
-			public const int abc_btn_default_mtrl_shape = 2131165199;
+			public const int abc_btn_colored_material = 2131165199;
 			
 			// aapt resource value: 0x7F070010
-			public const int abc_btn_radio_material = 2131165200;
+			public const int abc_btn_default_mtrl_shape = 2131165200;
 			
 			// aapt resource value: 0x7F070011
-			public const int abc_btn_radio_material_anim = 2131165201;
+			public const int abc_btn_radio_material = 2131165201;
 			
 			// aapt resource value: 0x7F070012
-			public const int abc_btn_radio_to_on_mtrl_000 = 2131165202;
+			public const int abc_btn_radio_material_anim = 2131165202;
 			
 			// aapt resource value: 0x7F070013
-			public const int abc_btn_radio_to_on_mtrl_015 = 2131165203;
+			public const int abc_btn_radio_to_on_mtrl_000 = 2131165203;
 			
 			// aapt resource value: 0x7F070014
-			public const int abc_btn_switch_to_on_mtrl_00001 = 2131165204;
+			public const int abc_btn_radio_to_on_mtrl_015 = 2131165204;
 			
 			// aapt resource value: 0x7F070015
-			public const int abc_btn_switch_to_on_mtrl_00012 = 2131165205;
+			public const int abc_btn_switch_to_on_mtrl_00001 = 2131165205;
 			
 			// aapt resource value: 0x7F070016
-			public const int abc_cab_background_internal_bg = 2131165206;
+			public const int abc_btn_switch_to_on_mtrl_00012 = 2131165206;
 			
 			// aapt resource value: 0x7F070017
-			public const int abc_cab_background_top_material = 2131165207;
+			public const int abc_cab_background_internal_bg = 2131165207;
 			
 			// aapt resource value: 0x7F070018
-			public const int abc_cab_background_top_mtrl_alpha = 2131165208;
+			public const int abc_cab_background_top_material = 2131165208;
 			
 			// aapt resource value: 0x7F070019
-			public const int abc_control_background_material = 2131165209;
+			public const int abc_cab_background_top_mtrl_alpha = 2131165209;
 			
 			// aapt resource value: 0x7F07001A
-			public const int abc_dialog_material_background = 2131165210;
+			public const int abc_control_background_material = 2131165210;
 			
 			// aapt resource value: 0x7F07001B
-			public const int abc_edit_text_material = 2131165211;
+			public const int abc_dialog_material_background = 2131165211;
 			
 			// aapt resource value: 0x7F07001C
-			public const int abc_ic_ab_back_material = 2131165212;
+			public const int abc_edit_text_material = 2131165212;
 			
 			// aapt resource value: 0x7F07001D
-			public const int abc_ic_arrow_drop_right_black_24dp = 2131165213;
+			public const int abc_ic_ab_back_material = 2131165213;
 			
 			// aapt resource value: 0x7F07001E
-			public const int abc_ic_clear_material = 2131165214;
+			public const int abc_ic_arrow_drop_right_black_24dp = 2131165214;
 			
 			// aapt resource value: 0x7F07001F
-			public const int abc_ic_commit_search_api_mtrl_alpha = 2131165215;
+			public const int abc_ic_clear_material = 2131165215;
 			
 			// aapt resource value: 0x7F070020
-			public const int abc_ic_go_search_api_material = 2131165216;
+			public const int abc_ic_commit_search_api_mtrl_alpha = 2131165216;
 			
 			// aapt resource value: 0x7F070021
-			public const int abc_ic_menu_copy_mtrl_am_alpha = 2131165217;
+			public const int abc_ic_go_search_api_material = 2131165217;
 			
 			// aapt resource value: 0x7F070022
-			public const int abc_ic_menu_cut_mtrl_alpha = 2131165218;
+			public const int abc_ic_menu_copy_mtrl_am_alpha = 2131165218;
 			
 			// aapt resource value: 0x7F070023
-			public const int abc_ic_menu_overflow_material = 2131165219;
+			public const int abc_ic_menu_cut_mtrl_alpha = 2131165219;
 			
 			// aapt resource value: 0x7F070024
-			public const int abc_ic_menu_paste_mtrl_am_alpha = 2131165220;
+			public const int abc_ic_menu_overflow_material = 2131165220;
 			
 			// aapt resource value: 0x7F070025
-			public const int abc_ic_menu_selectall_mtrl_alpha = 2131165221;
+			public const int abc_ic_menu_paste_mtrl_am_alpha = 2131165221;
 			
 			// aapt resource value: 0x7F070026
-			public const int abc_ic_menu_share_mtrl_alpha = 2131165222;
+			public const int abc_ic_menu_selectall_mtrl_alpha = 2131165222;
 			
 			// aapt resource value: 0x7F070027
-			public const int abc_ic_search_api_material = 2131165223;
+			public const int abc_ic_menu_share_mtrl_alpha = 2131165223;
 			
 			// aapt resource value: 0x7F070028
-			public const int abc_ic_star_black_16dp = 2131165224;
+			public const int abc_ic_search_api_material = 2131165224;
 			
 			// aapt resource value: 0x7F070029
-			public const int abc_ic_star_black_36dp = 2131165225;
+			public const int abc_ic_star_black_16dp = 2131165225;
 			
 			// aapt resource value: 0x7F07002A
-			public const int abc_ic_star_black_48dp = 2131165226;
+			public const int abc_ic_star_black_36dp = 2131165226;
 			
 			// aapt resource value: 0x7F07002B
-			public const int abc_ic_star_half_black_16dp = 2131165227;
+			public const int abc_ic_star_black_48dp = 2131165227;
 			
 			// aapt resource value: 0x7F07002C
-			public const int abc_ic_star_half_black_36dp = 2131165228;
+			public const int abc_ic_star_half_black_16dp = 2131165228;
 			
 			// aapt resource value: 0x7F07002D
-			public const int abc_ic_star_half_black_48dp = 2131165229;
+			public const int abc_ic_star_half_black_36dp = 2131165229;
 			
 			// aapt resource value: 0x7F07002E
-			public const int abc_ic_voice_search_api_material = 2131165230;
+			public const int abc_ic_star_half_black_48dp = 2131165230;
 			
 			// aapt resource value: 0x7F07002F
-			public const int abc_item_background_holo_dark = 2131165231;
+			public const int abc_ic_voice_search_api_material = 2131165231;
 			
 			// aapt resource value: 0x7F070030
-			public const int abc_item_background_holo_light = 2131165232;
+			public const int abc_item_background_holo_dark = 2131165232;
 			
 			// aapt resource value: 0x7F070031
-			public const int abc_list_divider_material = 2131165233;
+			public const int abc_item_background_holo_light = 2131165233;
 			
 			// aapt resource value: 0x7F070032
-			public const int abc_list_divider_mtrl_alpha = 2131165234;
+			public const int abc_list_divider_material = 2131165234;
 			
 			// aapt resource value: 0x7F070033
-			public const int abc_list_focused_holo = 2131165235;
+			public const int abc_list_divider_mtrl_alpha = 2131165235;
 			
 			// aapt resource value: 0x7F070034
-			public const int abc_list_longpressed_holo = 2131165236;
+			public const int abc_list_focused_holo = 2131165236;
 			
 			// aapt resource value: 0x7F070035
-			public const int abc_list_pressed_holo_dark = 2131165237;
+			public const int abc_list_longpressed_holo = 2131165237;
 			
 			// aapt resource value: 0x7F070036
-			public const int abc_list_pressed_holo_light = 2131165238;
+			public const int abc_list_pressed_holo_dark = 2131165238;
 			
 			// aapt resource value: 0x7F070037
-			public const int abc_list_selector_background_transition_holo_dark = 2131165239;
+			public const int abc_list_pressed_holo_light = 2131165239;
 			
 			// aapt resource value: 0x7F070038
-			public const int abc_list_selector_background_transition_holo_light = 2131165240;
+			public const int abc_list_selector_background_transition_holo_dark = 2131165240;
 			
 			// aapt resource value: 0x7F070039
-			public const int abc_list_selector_disabled_holo_dark = 2131165241;
+			public const int abc_list_selector_background_transition_holo_light = 2131165241;
 			
 			// aapt resource value: 0x7F07003A
-			public const int abc_list_selector_disabled_holo_light = 2131165242;
+			public const int abc_list_selector_disabled_holo_dark = 2131165242;
 			
 			// aapt resource value: 0x7F07003B
-			public const int abc_list_selector_holo_dark = 2131165243;
+			public const int abc_list_selector_disabled_holo_light = 2131165243;
 			
 			// aapt resource value: 0x7F07003C
-			public const int abc_list_selector_holo_light = 2131165244;
+			public const int abc_list_selector_holo_dark = 2131165244;
 			
 			// aapt resource value: 0x7F07003D
-			public const int abc_menu_hardkey_panel_mtrl_mult = 2131165245;
+			public const int abc_list_selector_holo_light = 2131165245;
 			
 			// aapt resource value: 0x7F07003E
-			public const int abc_popup_background_mtrl_mult = 2131165246;
+			public const int abc_menu_hardkey_panel_mtrl_mult = 2131165246;
 			
 			// aapt resource value: 0x7F07003F
-			public const int abc_ratingbar_indicator_material = 2131165247;
+			public const int abc_popup_background_mtrl_mult = 2131165247;
 			
 			// aapt resource value: 0x7F070040
-			public const int abc_ratingbar_material = 2131165248;
+			public const int abc_ratingbar_indicator_material = 2131165248;
 			
 			// aapt resource value: 0x7F070041
-			public const int abc_ratingbar_small_material = 2131165249;
+			public const int abc_ratingbar_material = 2131165249;
 			
 			// aapt resource value: 0x7F070042
-			public const int abc_scrubber_control_off_mtrl_alpha = 2131165250;
+			public const int abc_ratingbar_small_material = 2131165250;
 			
 			// aapt resource value: 0x7F070043
-			public const int abc_scrubber_control_to_pressed_mtrl_000 = 2131165251;
+			public const int abc_scrubber_control_off_mtrl_alpha = 2131165251;
 			
 			// aapt resource value: 0x7F070044
-			public const int abc_scrubber_control_to_pressed_mtrl_005 = 2131165252;
+			public const int abc_scrubber_control_to_pressed_mtrl_000 = 2131165252;
 			
 			// aapt resource value: 0x7F070045
-			public const int abc_scrubber_primary_mtrl_alpha = 2131165253;
+			public const int abc_scrubber_control_to_pressed_mtrl_005 = 2131165253;
 			
 			// aapt resource value: 0x7F070046
-			public const int abc_scrubber_track_mtrl_alpha = 2131165254;
+			public const int abc_scrubber_primary_mtrl_alpha = 2131165254;
 			
 			// aapt resource value: 0x7F070047
-			public const int abc_seekbar_thumb_material = 2131165255;
+			public const int abc_scrubber_track_mtrl_alpha = 2131165255;
 			
 			// aapt resource value: 0x7F070048
-			public const int abc_seekbar_tick_mark_material = 2131165256;
+			public const int abc_seekbar_thumb_material = 2131165256;
 			
 			// aapt resource value: 0x7F070049
-			public const int abc_seekbar_track_material = 2131165257;
+			public const int abc_seekbar_tick_mark_material = 2131165257;
 			
 			// aapt resource value: 0x7F07004A
-			public const int abc_spinner_mtrl_am_alpha = 2131165258;
+			public const int abc_seekbar_track_material = 2131165258;
 			
 			// aapt resource value: 0x7F07004B
-			public const int abc_spinner_textfield_background_material = 2131165259;
+			public const int abc_spinner_mtrl_am_alpha = 2131165259;
 			
 			// aapt resource value: 0x7F07004C
-			public const int abc_switch_thumb_material = 2131165260;
+			public const int abc_spinner_textfield_background_material = 2131165260;
 			
 			// aapt resource value: 0x7F07004D
-			public const int abc_switch_track_mtrl_alpha = 2131165261;
+			public const int abc_switch_thumb_material = 2131165261;
 			
 			// aapt resource value: 0x7F07004E
-			public const int abc_tab_indicator_material = 2131165262;
+			public const int abc_switch_track_mtrl_alpha = 2131165262;
 			
 			// aapt resource value: 0x7F07004F
-			public const int abc_tab_indicator_mtrl_alpha = 2131165263;
-			
-			// aapt resource value: 0x7F070057
-			public const int abc_textfield_activated_mtrl_alpha = 2131165271;
-			
-			// aapt resource value: 0x7F070058
-			public const int abc_textfield_default_mtrl_alpha = 2131165272;
-			
-			// aapt resource value: 0x7F070059
-			public const int abc_textfield_search_activated_mtrl_alpha = 2131165273;
-			
-			// aapt resource value: 0x7F07005A
-			public const int abc_textfield_search_default_mtrl_alpha = 2131165274;
-			
-			// aapt resource value: 0x7F07005B
-			public const int abc_textfield_search_material = 2131165275;
+			public const int abc_tab_indicator_material = 2131165263;
 			
 			// aapt resource value: 0x7F070050
-			public const int abc_text_cursor_material = 2131165264;
+			public const int abc_tab_indicator_mtrl_alpha = 2131165264;
 			
-			// aapt resource value: 0x7F070051
-			public const int abc_text_select_handle_left_mtrl_dark = 2131165265;
+			// aapt resource value: 0x7F070058
+			public const int abc_textfield_activated_mtrl_alpha = 2131165272;
 			
-			// aapt resource value: 0x7F070052
-			public const int abc_text_select_handle_left_mtrl_light = 2131165266;
+			// aapt resource value: 0x7F070059
+			public const int abc_textfield_default_mtrl_alpha = 2131165273;
 			
-			// aapt resource value: 0x7F070053
-			public const int abc_text_select_handle_middle_mtrl_dark = 2131165267;
+			// aapt resource value: 0x7F07005A
+			public const int abc_textfield_search_activated_mtrl_alpha = 2131165274;
 			
-			// aapt resource value: 0x7F070054
-			public const int abc_text_select_handle_middle_mtrl_light = 2131165268;
-			
-			// aapt resource value: 0x7F070055
-			public const int abc_text_select_handle_right_mtrl_dark = 2131165269;
-			
-			// aapt resource value: 0x7F070056
-			public const int abc_text_select_handle_right_mtrl_light = 2131165270;
+			// aapt resource value: 0x7F07005B
+			public const int abc_textfield_search_default_mtrl_alpha = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int abc_vector_test = 2131165276;
+			public const int abc_textfield_search_material = 2131165276;
+			
+			// aapt resource value: 0x7F070051
+			public const int abc_text_cursor_material = 2131165265;
+			
+			// aapt resource value: 0x7F070052
+			public const int abc_text_select_handle_left_mtrl_dark = 2131165266;
+			
+			// aapt resource value: 0x7F070053
+			public const int abc_text_select_handle_left_mtrl_light = 2131165267;
+			
+			// aapt resource value: 0x7F070054
+			public const int abc_text_select_handle_middle_mtrl_dark = 2131165268;
+			
+			// aapt resource value: 0x7F070055
+			public const int abc_text_select_handle_middle_mtrl_light = 2131165269;
+			
+			// aapt resource value: 0x7F070056
+			public const int abc_text_select_handle_right_mtrl_dark = 2131165270;
+			
+			// aapt resource value: 0x7F070057
+			public const int abc_text_select_handle_right_mtrl_light = 2131165271;
 			
 			// aapt resource value: 0x7F07005D
-			public const int avd_hide_password = 2131165277;
+			public const int abc_vector_test = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int avd_show_password = 2131165278;
+			public const int avd_hide_password = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int btn_checkbox_checked_mtrl = 2131165279;
+			public const int avd_show_password = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165280;
+			public const int btn_checkbox_checked_mtrl = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int btn_checkbox_unchecked_mtrl = 2131165281;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165282;
+			public const int btn_checkbox_unchecked_mtrl = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int btn_radio_off_mtrl = 2131165283;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int btn_radio_off_to_on_mtrl_animation = 2131165284;
+			public const int btn_radio_off_mtrl = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int btn_radio_on_mtrl = 2131165285;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int btn_radio_on_to_off_mtrl_animation = 2131165286;
+			public const int btn_radio_on_mtrl = 2131165286;
+			
+			// aapt resource value: 0x7F070067
+			public const int btn_radio_on_to_off_mtrl_animation = 2131165287;
 			
 			// aapt resource value: 0x7F070000
 			public const int ByGroup = 2131165184;
 			
-			// aapt resource value: 0x7F070067
-			public const int ddarrow = 2131165287;
-			
 			// aapt resource value: 0x7F070068
-			public const int design_bottom_navigation_item_background = 2131165288;
+			public const int ddarrow = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int design_fab_background = 2131165289;
+			public const int design_bottom_navigation_item_background = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int design_ic_visibility = 2131165290;
+			public const int design_fab_background = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int design_ic_visibility_off = 2131165291;
+			public const int design_ic_visibility = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int design_password_eye = 2131165292;
+			public const int design_ic_visibility_off = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int design_snackbar_background = 2131165293;
+			public const int design_password_eye = 2131165293;
+			
+			// aapt resource value: 0x7F07006E
+			public const int design_snackbar_background = 2131165294;
 			
 			// aapt resource value: 0x7F070001
 			public const int Down = 2131165185;
@@ -20168,95 +20390,98 @@ namespace TuFarmaApp.Droid
 			// aapt resource value: 0x7F070002
 			public const int GoApp = 2131165186;
 			
-			// aapt resource value: 0x7F07006E
-			public const int ic_errorstatus = 2131165294;
-			
 			// aapt resource value: 0x7F07006F
-			public const int ic_mtrl_chip_checked_black = 2131165295;
+			public const int ic_errorstatus = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int ic_mtrl_chip_checked_circle = 2131165296;
+			public const int ic_mtrl_chip_checked_black = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int ic_mtrl_chip_close_circle = 2131165297;
+			public const int ic_mtrl_chip_checked_circle = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int ic_successstatus = 2131165298;
+			public const int ic_mtrl_chip_close_circle = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int mtrl_snackbar_background = 2131165299;
+			public const int ic_successstatus = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int mtrl_tabs_default_indicator = 2131165300;
+			public const int mtrl_snackbar_background = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int navigation_empty_icon = 2131165301;
+			public const int mtrl_tabs_default_indicator = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int navigation_empty_icon = 2131165302;
 			
 			// aapt resource value: 0x7F070003
 			public const int Next = 2131165187;
 			
-			// aapt resource value: 0x7F070076
-			public const int notification_action_background = 2131165302;
-			
 			// aapt resource value: 0x7F070077
-			public const int notification_bg = 2131165303;
+			public const int notification_action_background = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int notification_bg_low = 2131165304;
+			public const int notification_bg = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int notification_bg_low_normal = 2131165305;
+			public const int notification_bg_low = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int notification_bg_low_pressed = 2131165306;
+			public const int notification_bg_low_normal = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int notification_bg_normal = 2131165307;
+			public const int notification_bg_low_pressed = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int notification_bg_normal_pressed = 2131165308;
+			public const int notification_bg_normal = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int notification_icon_background = 2131165309;
+			public const int notification_bg_normal_pressed = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int notification_template_icon_bg = 2131165310;
+			public const int notification_icon_background = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int notification_template_icon_low_bg = 2131165311;
+			public const int notification_template_icon_bg = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int notification_tile_bg = 2131165312;
+			public const int notification_template_icon_low_bg = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int notify_panel_notification_icon_bg = 2131165313;
+			public const int notification_tile_bg = 2131165313;
+			
+			// aapt resource value: 0x7F070082
+			public const int notify_panel_notification_icon_bg = 2131165314;
 			
 			// aapt resource value: 0x7F070004
 			public const int Portada1 = 2131165188;
 			
 			// aapt resource value: 0x7F070005
-			public const int Prev = 2131165189;
-			
-			// aapt resource value: 0x7F070082
-			public const int roundedbg = 2131165314;
-			
-			// aapt resource value: 0x7F070083
-			public const int roundedbgdark = 2131165315;
-			
-			// aapt resource value: 0x7F070084
-			public const int splash_screen = 2131165316;
-			
-			// aapt resource value: 0x7F070085
-			public const int tooltip_frame_dark = 2131165317;
-			
-			// aapt resource value: 0x7F070086
-			public const int tooltip_frame_light = 2131165318;
+			public const int Portada11 = 2131165189;
 			
 			// aapt resource value: 0x7F070006
-			public const int Up = 2131165190;
+			public const int Prev = 2131165190;
+			
+			// aapt resource value: 0x7F070083
+			public const int roundedbg = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int roundedbgdark = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int splash_screen = 2131165317;
+			
+			// aapt resource value: 0x7F070086
+			public const int tooltip_frame_dark = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int watermark = 2131165319;
+			public const int tooltip_frame_light = 2131165319;
+			
+			// aapt resource value: 0x7F070007
+			public const int Up = 2131165191;
+			
+			// aapt resource value: 0x7F070088
+			public const int watermark = 2131165320;
 			
 			static Drawable()
 			{
@@ -21469,14 +21694,17 @@ namespace TuFarmaApp.Droid
 			// aapt resource value: 0x7F0C0002
 			public const int GoApp = 2131492866;
 			
-			// aapt resource value: 0x7F0C0003
-			public const int icon = 2131492867;
-			
 			// aapt resource value: 0x7F0C0004
-			public const int icon_round = 2131492868;
+			public const int icon = 2131492868;
 			
 			// aapt resource value: 0x7F0C0005
-			public const int launcher_foreground = 2131492869;
+			public const int icon_round = 2131492869;
+			
+			// aapt resource value: 0x7F0C0006
+			public const int launcher_foreground = 2131492870;
+			
+			// aapt resource value: 0x7F0C0003
+			public const int TopStoreMargarita = 2131492867;
 			
 			static Mipmap()
 			{

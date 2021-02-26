@@ -5,7 +5,7 @@ using AndroidX.AppCompat.App;
 
 namespace TuFarmaApp.Droid
 {
-    [Activity(Theme = "@style/Theme.Splash", Label = "GoFarmApp", Icon = "@mipmap/Farmacia72", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/Theme.Splash", Label = "MargaritaTop Store", Icon = "@mipmap/TopStoreMargarita", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

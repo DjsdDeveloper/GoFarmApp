@@ -15,7 +15,9 @@ FormsViewGroup
 ImageCircle.Forms.Plugin
 ModernHttpClient
 Plugin.Connectivity
+Plugin.CurrentActivity
 Plugin.Media
+Plugin.Permissions
 Prism.Plugin.Popups
 Rg.Plugins.Popup
 SkiaSharp

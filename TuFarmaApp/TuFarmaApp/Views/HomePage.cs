@@ -1,4 +1,5 @@
-﻿using FFImageLoading.Forms;
+﻿using CarouselView.FormsPlugin.Abstractions;
+using FFImageLoading.Forms;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -198,7 +199,7 @@ namespace TuFarmaApp.Views
             {
                 Margin = new Thickness(10, 0, 0, 0),
                 FontSize = 12,
-                Placeholder = "Buscar medicamento",
+                Placeholder = "Buscar producto",
                 HeightRequest = 35,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
             };
@@ -258,6 +259,188 @@ namespace TuFarmaApp.Views
 
             ProductosView2.SetBinding(CollectionView.ItemsSourceProperty,
                 nameof(HomePageViewModel.Products));
+
+            var HeaderTemplate = new DataTemplate(() =>
+            {
+                #region Carousel Principal
+
+                //var tapGestureRecognizer = new TapGestureRecognizer();
+                CarouselViewControl carouselView = new CarouselViewControl
+                {
+                    Margin = new Thickness(0, 5, 0, 5),
+                    ShowIndicators = true,
+                    ItemTemplate = new DataTemplate(() =>
+                    {
+                        var img = new CachedImage() 
+                        {
+                            Aspect = Aspect.AspectFill,
+                        };
+                        img.SetBinding(CachedImage.SourceProperty, ".");
+                        //img.GestureRecognizers.Add(tapGestureRecognizer);
+
+                        return img;
+                    })
+                };
+                carouselView.SetBinding(CarouselViewControl.ItemsSourceProperty, nameof(HomePageViewModel.Carouselsourse));
+
+                Device.StartTimer(TimeSpan.FromSeconds(2), (Func<bool>)(() =>
+                {
+                    carouselView.Position = (carouselView.Position + 1) % App.IndexSetting;
+
+                    return true;
+                }));
+
+                //var img = new CachedImage
+                //{
+                //    Aspect = Aspect.AspectFill,
+                //    Source = ImageSource.FromResource("TuFarmaApp.Img.BannerHome.1.jpg")
+                //};
+                //var rezi = new Models.ResizeImgModel2();
+                //rezi.edits.resize.width = 300;
+                //img.SetBinding(CachedImage.SourceProperty, ".", converter: new Helpers.Converters.ResizeConvert(rezi));
+
+                //var rezi2 = new Models.ResizeImgModel2();
+                //rezi2.edits.resize.width = 1;
+                //img.SetBinding(CachedImage.LoadingPlaceholderProperty, ".", converter: new Helpers.Converters.ResizeConvert(rezi2));
+                //return img;
+
+                Grid ProductLayout = new Grid();
+
+                ProductLayout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(170, GridUnitType.Absolute) });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //ProductLayout.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+                //tapGestureRecognizer.Tapped += (s, e) =>
+                //{
+                //    var list = new List<Photo>();
+                //    var max = carouselView.ItemsSource.GetCount();
+                //    for (int i = 0; i < max; i++)
+                //    {
+                //        list.Add(new Photo
+                //        {
+                //            URL = (string)carouselView.ItemsSource.GetItem(i),
+                //            Title = $"{i + 1} de {max}"
+                //        });
+                //    }
+
+                //    new PhotoBrowser
+                //    {
+                //        ActionButtonPressed = (index) =>
+                //        {
+                //            PhotoBrowser.Close();
+                //        },
+                //        StartIndex = carouselView.Position,
+                //        Photos = list,
+                //        BackgroundColor = Color.Black,
+                //    }.Show();
+                //};
+
+                #endregion
+
+
+
+
+                //var categories = new CollectionView
+                //{
+                //    HeightRequest = 90,
+                //    Margin = new Thickness(0, BarHeigth + 10, 0, 0),
+                //    SelectionMode = SelectionMode.None,
+                //    ItemsLayout = new LinearItemsLayout(ItemsLayoutOrientation.Horizontal)
+                //    {
+                //        ItemSpacing = 5
+                //    },
+                //    ItemTemplate = new DataTemplate(() => new CellCategories(this))
+                //};
+                //categories.SetBinding(CollectionView.ItemsSourceProperty, nameof(MarketMainPageD2ViewModel.Categories));
+
+                //var sellButton = new ButtonIcon()
+                //{
+                //    //Margin = new Thickness(0, 20, 10, 20),
+                //    Margin = new Thickness(0, 10, 10, 10),
+                //};
+                //sellButton.text.Text = "¿Qué quieres vender hoy?";
+                //sellButton.icon.Source = "resource://Chappsy2.Img.UserIcon.billete2.svg";
+                //sellButton.icon.ReplaceStringMap = new Dictionary<string, string> { { "ffffff", "ffffff" } };
+                //sellButton.tap.SetBinding(TapGestureRecognizer.CommandProperty, nameof(MarketMainPageD2ViewModel.ButtonVenderCommand));
+
+                //var LogoC = new CircleImage
+                //{
+                //    Margin = new Thickness(10, 0, 0, 0),
+                //    HorizontalOptions = LayoutOptions.Center,
+                //    Aspect = Aspect.AspectFill,
+                //    HeightRequest = 40,
+                //    WidthRequest = 40,
+                //};
+                //LogoC.SetBinding(CircleImage.SourceProperty, nameof(MarketMainPageD2ViewModel.picture));
+
+                //var gifts = new GiftsView();
+                //gifts.SetBinding(GiftsView.ItemsSourceProperty, nameof(MarketMainPageD2ViewModel.Gifts));
+                //gifts.SetBinding(GiftsView.CommandProperty, nameof(MarketMainPageD2ViewModel.ProductoTap));
+
+
+                //var BannerTgr = new TapGestureRecognizer();
+                //BannerTgr.SetBinding(TapGestureRecognizer.CommandProperty, nameof(MarketMainPageD2ViewModel.BannerCommand));
+                //var Banner = new CachedImage
+                //{
+                //    HeightRequest = App.screenWidth * 0.817,
+                //    Source = EmbeddedResourceImageSource.FromResource("Chappsy2.Img.Market.Banner.png")
+                //};
+                //Banner.GestureRecognizers.Add(BannerTgr);
+
+                //var h = new Grid
+                //{
+                //    RowSpacing = 0,
+                //    ColumnSpacing = 20,
+                //};
+                //h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                //h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+                //h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                ////h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+                ////h.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+
+                //h.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
+                //h.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Star });
+
+                //h.Children.Add(new BoxView { Style = (Style)Resources["separator"] }, 0, 2, 0, 1);
+                //h.Children.Add(LogoC, 0, 1, 1, 2);
+                //h.Children.Add(sellButton, 1, 2, 1, 2);
+                //h.Children.Add(new BoxView { Style = (Style)Resources["separator"] }, 0, 2, 2, 3);
+
+                ////h.Children.Add(Stories, 0, 2, 3, 4);
+                ////h.Children.Add(new BoxView { Style = (Style)Resources["separator"] }, 0, 2, 4, 5);
+
+                ////h.Children.Add(Gfood, 0, 2, 5, 6);
+                //h.Children.Add(Banner, 0, 2, 3, 4);
+                //h.Children.Add(gifts, 0, 2, 4, 5);
+
+                //h.SetBinding(View.IsVisibleProperty, nameof(MarketMainPageD2ViewModel.IsvisbleOnlyCategories), converter: new InvertBoolConvert());
+                //CompressedLayout.SetIsHeadless(h, true);
+
+                ProductLayout.Children.Add(carouselView, 0, 2, 0, 1);
+
+                //return new StackLayout
+                //{
+                //    Spacing = -6,
+                //    Children =
+                //    {
+                //        carouselView
+                //        //categories,
+                //        //h
+                //    }
+                //};
+
+                return ProductLayout;
+            });
+            ProductosView2.HeaderTemplate = HeaderTemplate;
+            ProductosView2.SetBinding(CollectionView.HeaderProperty, new Binding { Source = this, Path = "BindingContext" });
             #endregion
 
             Content = ProductosView2;
