@@ -14,7 +14,7 @@ using Xamarin.Forms;
 
 namespace TuFarmaApp.Views
 {
-    public class MenuLogin : MasterDetailPage
+    public class MenuLogin : ContentPage
     {
 
         public MenuLogin()
@@ -86,7 +86,7 @@ namespace TuFarmaApp.Views
                     new MenuModel
                     {
                         Text = "Top tiendas",
-                        Icon =  "TuFarmaApp.Img.Svg.conversation.svg",
+                        Icon =  "TuFarmaApp.Img.Svg.SvgMenu.Shop.svg",
                         //PageName = nameof(NewShop)
                     },
                     new MenuModel
@@ -659,13 +659,16 @@ namespace TuFarmaApp.Views
             var MainContainer = new Grid();
             MainContainer.Children.Add(ListViewMenu, 0, 0);
 
-            var _Master = new ContentPage
-            {
-                Title = "Menu",
-                Padding = Device.RuntimePlatform == Device.iOS ? new Thickness(0, 20, 0, 0) : new Thickness(0),
-                Content = MainContainer
-            };
-            Master = _Master;
+            //var _Master = new ContentPage
+            //{
+            //    Title = "Menu",
+            //    Padding = Device.RuntimePlatform == Device.iOS ? new Thickness(0, 20, 0, 0) : new Thickness(0),
+            //    Content = MainContainer
+            //};
+            //Master = _Master;
+
+            Padding = Device.RuntimePlatform == Device.iOS ? new Thickness(0, 20, 0, 0) : new Thickness(0);
+            Content = MainContainer;
         }
     }
 }

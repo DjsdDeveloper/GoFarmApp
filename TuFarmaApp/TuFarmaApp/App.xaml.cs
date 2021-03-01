@@ -87,7 +87,9 @@ namespace TuFarmaApp
             containerRegistry.RegisterForNavigation<TerminosPage, TerminosPageViewModel>();
             containerRegistry.RegisterForNavigation<OlvidarPage, OlvidarPageViewModel>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
-            containerRegistry.RegisterForNavigation<MenuLogin, MenuLoginViewModel>();
+            containerRegistry.RegisterForNavigation<MenuLogin, MenuLoginViewModel>(); 
+            containerRegistry.RegisterForNavigation<MenuMain, MenuMainViewModel>(); 
+            containerRegistry.RegisterForNavigation<MainHome, MainHomeViewModel>();            
             #endregion
 
             #region Declaracion de interfaz

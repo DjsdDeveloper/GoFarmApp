@@ -49,8 +49,9 @@ namespace TuFarmaApp.ViewModels
 
             CommandGoHome = new DelegateCommand(async () =>
             {
-                await _navigationService
-                    .NavigateAsync($"/{nameof(MenuLogin)}/{nameof(NavigationPage)}/{nameof(HomePage)}");
+                //await _navigationService
+                //    .NavigateAsync($"/{nameof(MenuLogin)}/{nameof(NavigationPage)}/{nameof(HomePage)}");
+                await _navigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainHome)}");
             });
         }
 
